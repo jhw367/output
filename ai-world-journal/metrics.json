@@ -1,0 +1,94 @@
+{
+  "updated": "2026-05-23T06:40:00Z",
+  "method": "keyword counts per archived HTML report; social heat qualitative from public indexed platform signals",
+  "history": [
+    {
+      "date": "2026-05-18",
+      "file": "260518-20:00-ai-deep-dive.html",
+      "sources": 2,
+      "AI Act / regulation": 1,
+      "Agents / autonomy": 0,
+      "Cyber / security": 0,
+      "Compute / chips": 0,
+      "Workforce": 0,
+      "Public sector / procurement": 0
+    },
+    {
+      "date": "2026-05-19",
+      "file": "260519-20:00-ai-deep-dive.html",
+      "sources": 6,
+      "AI Act / regulation": 9,
+      "Agents / autonomy": 8,
+      "Cyber / security": 12,
+      "Compute / chips": 5,
+      "Workforce": 0,
+      "Public sector / procurement": 7
+    },
+    {
+      "date": "2026-05-22",
+      "file": "260522-23:19-ai-deep-dive.html",
+      "sources": 18,
+      "AI Act / regulation": 32,
+      "Agents / autonomy": 28,
+      "Cyber / security": 31,
+      "Compute / chips": 20,
+      "Workforce": 16,
+      "Public sector / procurement": 14
+    },
+    {
+      "date": "2026-05-23",
+      "file": "260523-06:40-ai-deep-dive.html",
+      "sources": 18,
+      "AI Act / regulation": 52,
+      "Agents / autonomy": 51,
+      "Cyber / security": 30,
+      "Compute / chips": 22,
+      "Workforce": 17,
+      "Public sector / procurement": 34
+    }
+  ],
+  "social_platforms": [
+    {
+      "platform": "X/Twitter",
+      "heat": 74,
+      "trend": "AI agents als dure, lange-context werkprocessen; Firecrawl/web tooling; Google Omni/Spark agents",
+      "evidence": "Publieke x.com-items via Google News"
+    },
+    {
+      "platform": "LinkedIn",
+      "heat": 86,
+      "trend": "AI agent governance/security, least privilege, approvals, Guardian Agent-oplossingen",
+      "evidence": "Sterke B2B/security posts via Google News"
+    },
+    {
+      "platform": "YouTube",
+      "heat": 78,
+      "trend": "Agentic AI-cursussen, Daytona agent cloud, Claude/Microsoft Foundry agents, economische risico’s",
+      "evidence": "Nieuwe YouTube-indexering via Google News"
+    },
+    {
+      "platform": "TikTok",
+      "heat": 66,
+      "trend": "Agentic commerce, Microsoft Foundry red-team agents, Google Search agents, hype/guardrails",
+      "evidence": "Publieke TikTok-items via Google News"
+    },
+    {
+      "platform": "Hacker News",
+      "heat": 71,
+      "trend": "Lokale firewall voor AI-agenten; rogue coding/database incidenten; RISC-V CPU door agent",
+      "evidence": "HN Algolia API: punten/commentaren zichtbaar"
+    },
+    {
+      "platform": "Reddit",
+      "heat": null,
+      "trend": "Niet direct gemeten: Reddit blokkeerde publieke JSON-fetch met 403",
+      "evidence": "Methodologische beperking"
+    },
+    {
+      "platform": "Bluesky",
+      "heat": null,
+      "trend": "Niet direct gemeten: publieke API gaf 403 in deze sessie",
+      "evidence": "Methodologische beperking"
+    }
+  ]
+}
