@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>H - Warm 2502 · Projectdashboard</title><style>
+:root{--bg:#0a0d0b;--bg2:#11170f;--panel:#141a16;--panel2:#192019;--ink:#f4f1e8;--muted:#b8b7a9;--line:#334032;--green:#78e08f;--lime:#c5f56d;--amber:#ffca6b;--fire:#ff855e;--blue:#77c8ff;--shadow:0 24px 80px rgba(0,0,0,.35);--radius:24px;--max:1320px}[data-theme="light"]{--bg:#f6f2e9;--bg2:#fffdf8;--panel:#ffffff;--panel2:#f7f3ea;--ink:#162015;--muted:#5d675c;--line:#d9d2c2;--green:#168a43;--lime:#5b7f0e;--amber:#a96400;--fire:#b54722;--blue:#116a9d;--shadow:0 18px 55px rgba(40,36,26,.10)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,rgba(120,224,143,.13),transparent 33%),radial-gradient(circle at 85% 8%,rgba(255,133,94,.12),transparent 30%),linear-gradient(145deg,var(--bg),var(--bg2));color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:var(--max);margin:auto;padding:28px}.topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(18px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}.topbar-inner{max-width:var(--max);margin:auto;padding:12px 28px;display:flex;align-items:center;gap:14px;justify-content:space-between}.brand{font-weight:850;letter-spacing:.02em}nav{display:flex;gap:8px;flex-wrap:wrap}nav a,.btn{border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 75%,transparent);color:var(--ink);border-radius:999px;padding:8px 12px;font-size:.88rem;text-decoration:none;cursor:pointer}nav a:hover,.btn:hover{border-color:var(--green);text-decoration:none}.hero{min-height:76vh;display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;padding:48px 0 28px}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--muted);background:rgba(255,255,255,.03)}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 18px var(--green)}h1{font-size:clamp(3rem,8vw,7.2rem);line-height:.9;letter-spacing:-.08em;margin:18px 0 18px}.subtitle{font-size:clamp(1.05rem,2.1vw,1.45rem);color:var(--muted);max-width:760px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.primary{background:linear-gradient(135deg,var(--green),var(--lime));color:#07100a;border:0;font-weight:800}.energy-orb{position:relative;min-height:520px;border:1px solid var(--line);border-radius:34px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:var(--shadow)}.orb{position:absolute;inset:70px;border-radius:50%;background:conic-gradient(from 150deg,var(--green),var(--blue),var(--amber),var(--fire),var(--green));filter:saturate(1.2);opacity:.9;animation:spin 22s linear infinite}.orb:after{content:"";position:absolute;inset:35px;border-radius:50%;background:radial-gradient(circle,var(--panel) 0 45%,transparent 46%),radial-gradient(circle at 50% 55%,rgba(255,255,255,.23),transparent 35%)}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.orb{animation:none}html{scroll-behavior:auto}}.orb-label{position:absolute;inset:auto 24px 24px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.mini{border:1px solid var(--line);border-radius:18px;padding:14px;background:color-mix(in srgb,var(--panel) 76%,transparent)}.mini b{display:block;font-size:1.4rem}.mini span{color:var(--muted);font-size:.88rem}.section{padding:48px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}h2{font-size:clamp(1.8rem,4vw,3.2rem);line-height:1;letter-spacing:-.05em;margin:0}.lead{color:var(--muted);max-width:700px}.grid{display:grid;gap:16px}.metrics{grid-template-columns:repeat(6,1fr)}.metric,.card,.scenario,.risk{border:1px solid var(--line);background:linear-gradient(180deg,color-mix(in srgb,var(--panel) 96%,white 4%),var(--panel));border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}.metric-k{color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}.metric-v{font-size:1.55rem;font-weight:850;letter-spacing:-.04em;margin-top:8px}.metric-n{color:var(--muted);font-size:.9rem;margin-top:4px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.card h3,.scenario-title,.risk h3{margin:.1rem 0 .55rem;font-size:1.25rem}.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.tag{border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--muted);background:rgba(255,255,255,.03);font-size:.86rem}.flow{display:grid;gap:14px}.phase{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start;border:1px solid var(--line);background:var(--panel);border-radius:22px;padding:18px}.phase-no{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--lime));color:#081108;font-weight:900;font-size:1.35rem}.phase h3{margin:0 0 4px}.phase p{margin:0;color:var(--muted)}.system-map{position:relative;min-height:580px;border:1px solid var(--line);border-radius:34px;padding:24px;background:radial-gradient(circle at 50% 45%,rgba(120,224,143,.16),transparent 32%),var(--panel);overflow:hidden}.node{position:absolute;min-width:155px;max-width:230px;border:1px solid var(--line);border-radius:20px;padding:14px;background:color-mix(in srgb,var(--panel2) 92%,transparent);box-shadow:0 14px 45px rgba(0,0,0,.18)}.node b{display:block}.node span{color:var(--muted);font-size:.86rem}.center{left:50%;top:48%;transform:translate(-50%,-50%);text-align:center;border-color:var(--green)}.n1{left:6%;top:12%}.n2{right:7%;top:10%}.n3{left:10%;bottom:14%}.n4{right:8%;bottom:16%}.n5{left:38%;top:6%}.n6{left:39%;bottom:6%}.line-svg{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}.table{width:100%;border-collapse:separate;border-spacing:0 10px;margin-top:20px}.table th{text-align:left;color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}.table td{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px}.table td:first-child{border-left:1px solid var(--line);border-radius:16px 0 0 16px;font-weight:800}.table td:last-child{border-right:1px solid var(--line);border-radius:0 16px 16px 0}.checklist{columns:2;gap:24px}.checklist li{break-inside:avoid;margin:0 0 10px;padding:10px 12px;border:1px solid var(--line);border-radius:14px;background:var(--panel);list-style:none}.checklist li:before{content:"□";color:var(--green);font-weight:900;margin-right:10px}.raw{max-height:520px;overflow:auto;white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.84rem;background:#050705;color:#dce8d5;border:1px solid var(--line);border-radius:22px;padding:20px}[data-theme="light"] .raw{background:#fff;color:#172017}.footer{padding:32px 0 70px;color:var(--muted);font-size:.92rem}.print-note{display:none}@media(max-width:1100px){.hero,.two,.three{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.energy-orb{min-height:430px}.system-map{min-height:auto;display:grid;gap:12px}.node{position:static;transform:none!important;max-width:none}.line-svg{display:none}}@media(max-width:720px){.wrap,.topbar-inner{padding-left:16px;padding-right:16px}nav{display:none}.metrics{grid-template-columns:1fr}.checklist{columns:1}h1{font-size:3.2rem}}@media print{body{background:white;color:#111}.topbar,.hero-actions,.orb,.raw{display:none}.wrap{max-width:none;padding:0}.hero{min-height:auto;display:block}.section{page-break-inside:avoid;padding:18px 0}.metric,.card,.scenario,.risk,.phase,.system-map,.node{box-shadow:none;background:white;border-color:#bbb}.print-note{display:block}}
+</style></head><body><header class="topbar"><div class="topbar-inner"><div class="brand">H - Warm 2502</div><nav><a href="#kern">Kern</a><a href="#systeem">Systeem</a><a href="#scenario">Scenario</a><a href="#roadmap">Roadmap</a><a href="#risico">Risico</a><a href="#bron">Bron</a></nav><button class="btn" id="themeBtn">Licht/donker</button></div></header><main class="wrap"><section class="hero"><div><div class="eyebrow"><span class="dot"></span> Projectdashboard · bijgewerkt 2026-05-24</div><h1>Warm 2502</h1><p class="subtitle">Een geïntegreerd woningenergiesysteem voor gasvrij, comfort, lage TCO en maximale benutting van vloer­massa, PV, EV, opslag en slimme sturing — zonder onnodige systeemcomplexiteit.</p><div class="hero-actions"><a class="btn primary" href="#roadmap">Bekijk uitvoeringsroute</a><a class="btn" href="#bron">Open brontekst</a><button class="btn" onclick="window.print()">Print / PDF</button></div><div class="tagrow"><span class="tag">gasvrij</span><span class="tag">lage temperatuur</span><span class="tag">R290</span><span class="tag">PV + EV</span><span class="tag">thermische massa</span><span class="tag">TCO 15–36 jaar</span><span class="tag">geen overengineering</span></div></div><aside class="energy-orb" aria-label="visualisatie energiekringloop"><div class="orb"></div><div class="orb-label"><div class="mini"><b>28–32°C</b><span>voorkeur aanvoer</span></div><div class="mini"><b>200–300L</b><span>slimme buffer</span></div><div class="mini"><b>7,6 kWh/°C</b><span>vloeropslag</span></div><div class="mini"><b>A+</b><span>voorkeursrichting</span></div></div></aside></section><section class="section" id="kern"><div class="section-head"><h2>Kernbeeld</h2><p class="lead">De woning lijkt uitzonderlijk geschikt voor lage-temperatuurverwarming door de combinatie van zware vloer, vloerverwarming, redelijke schil en bestaande PV/EV-infrastructuur.</p></div><div class="grid metrics"><article class="metric"><div class="metric-k">Woningtype</div><div class="metric-v">2-onder-1-kap</div><div class="metric-n">1999–2001 · Zeewolde</div></article><article class="metric"><div class="metric-k">BG-vloer</div><div class="metric-v">±31 ton massa</div><div class="metric-n">±7,6 kWh opslag per °C</div></article><article class="metric"><div class="metric-k">PV-installatie</div><div class="metric-v">20 × 405 Wp</div><div class="metric-n">werkelijk ±7.155 kWh/jaar</div></article><article class="metric"><div class="metric-k">Gas 2024</div><div class="metric-v">±1.064 m³</div><div class="metric-n">historisch gemiddelde ±1.417 m³</div></article><article class="metric"><div class="metric-k">Elektra recent</div><div class="metric-v">±9.500 kWh</div><div class="metric-n">incl. EV/elektrificatie</div></article><article class="metric"><div class="metric-k">LTV-geschiktheid</div><div class="metric-v">Zeer hoog</div><div class="metric-n">vloer + massa + schil</div></article></div></section><section class="section" id="systeem"><div class="section-head"><h2>Systeemkaart</h2><p class="lead">Het project is geen losse warmtepompkeuze, maar een samenhangend energie- en comfort­systeem.</p></div><div class="system-map"><svg class="line-svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 50 L16 22 M50 50 L83 20 M50 50 L20 78 M50 50 L82 76 M50 50 L50 16 M50 50 L50 86" stroke="currentColor" stroke-width=".35" fill="none"/></svg><div class="node center"><b>Integraal energiesysteem</b><span>Comfort · TCO · gasvrij · eenvoud</span></div><div class="node n1"><b>Schil & vloer</b><span>Rc 3.0–3.23, 90 mm dekvloer, massa als buffer</span></div><div class="node n2"><b>Warmtepomp</b><span>R290 / NIBE-route, lage aanvoer, koeling</span></div><div class="node n3"><b>PV + opslag</b><span>zelfconsumptie boven extra panelen</span></div><div class="node n4"><b>EV-integratie</b><span>slim laden als flexibel verbruik</span></div><div class="node n5"><b>Data</b><span>HomeWizard P1 + KNMI Lelystad + HDD18</span></div><div class="node n6"><b>Ventilatie</b><span>luchtkwaliteit, Stûv, zomercomfort</span></div></div></section><section class="section" id="scenario"><div class="section-head"><h2>Scenario’s</h2><p class="lead">De voorkeursrichting is A+: eenvoudig, lage temperatuur, slim gestuurd, met ruimte voor opslag maar zonder zware overengineering.</p></div><div class="grid three"><article class="scenario"><div class="scenario-title">B — huidige situatie</div><p><b>Configuratie:</b> CV-ketel + mengverdeler</p><p><b>Waarde:</b> Laagste CAPEX, hoogste gasafhankelijkheid</p><p><b>Let op:</b> Niet toekomstvast</p></article><article class="scenario"><div class="scenario-title">A+ — voorkeursrichting</div><p><b>Configuratie:</b> R290 WP / NIBE S735C + SAM, 28–32°C, 200–300L buffer</p><p><b>Waarde:</b> Laagcomplex, comfort, koeling, TCO</p><p><b>Let op:</b> Dimensionering en ventilatie nog hard maken</p></article><article class="scenario"><div class="scenario-title">A+++ — uitgebreid</div><p><b>Configuratie:</b> Meer opslag, batterij, geavanceerde sturing</p><p><b>Waarde:</b> Maximale elektrificatie/zelfconsumptie</p><p><b>Let op:</b> Risico overengineering</p></article></div><table class="table" aria-label="scenario vergelijking"><thead><tr><th>Besluitdimensie</th><th>Voorkeur</th><th>Waarom</th></tr></thead><tbody><tr><td>Warmtebron</td><td>R290 / NIBE S735C + SAM of compacte L/W</td><td>Toekomstvast, lage temperatuur, mogelijk koeling</td></tr><tr><td>Afgifte</td><td>Vloerverwarming + modulerende verdeler + convector</td><td>Comfort en lage aanvoer zonder volledige verbouwing</td></tr><tr><td>Opslag</td><td>Vloermassa + slimme buffer; batterij later optimaliseren</td><td>Eerst bestaande massa benutten, dan pas CAPEX verhogen</td></tr><tr><td>PV-strategie</td><td>Zelfconsumptie/load shifting</td><td>Salderingsafbouw maakt timing belangrijker dan extra opwek</td></tr></tbody></table></section><section class="section" id="roadmap"><div class="section-head"><h2>Uitvoeringsroute</h2><p class="lead">Volgorde: eerst onzekerheden reduceren, dan installeren. Niet andersom.</p></div><div class="flow"><div class="phase"><div class="phase-no">1</div><div><h3>Vraagreductie</h3><p>Kierdichting, kruipruimte/Tonzon, luchtkwaliteit, lage temperatuur testen</p></div></div><div class="phase"><div class="phase-no">2</div><div><h3>Afgiftesysteem</h3><p>Modulerende verdeler, vloerverwarming optimaliseren, ventilatorconvector woonkamer</p></div></div><div class="phase"><div class="phase-no">3</div><div><h3>Warmtepompkeuze</h3><p>Htr-regressie afronden, pieklast bepalen, R290/NIBE-route selecteren</p></div></div><div class="phase"><div class="phase-no">4</div><div><h3>Slimme sturing</h3><p>PV-load shifting, EV slim laden, bufferstrategie, Home Assistant integratie</p></div></div></div></section><section class="section"><div class="section-head"><h2>Open werkvoorraad</h2><p class="lead">Items die nog uitgewerkt moeten worden voordat het eindontwerp hard wordt.</p></div><ul class="checklist"><li>Definitieve Htr-bepaling met volledige regressie</li><li>Exacte warmtepompdimensionering</li><li>Definitieve ventilatiestrategie</li><li>Integrale zomerkoeling</li><li>Batterijgrootte optimalisatie</li><li>Dynamische energiesturing</li><li>Integratie Home Assistant</li><li>Werkelijke SCOP onder praktijkcondities</li><li>Concrete uitvoeringsfasering</li></ul></section><section class="section" id="risico"><div class="section-head"><h2>Demolish-check</h2><p class="lead">Wat kan de voorkeursrichting ondermijnen? Deze punten moeten actief bewaakt worden.</p></div><div class="grid two"><article class="risk"><h3>Overengineering</h3><p>Te veel componenten kan TCO en onderhoud verslechteren.</p><small>Voorkeur voor eenvoudige architectuur met meetbare meerwaarde.</small></article><article class="risk"><h3>Ventilatie/gezondheid</h3><p>Kruipruimte-lucht en houtkachelstromen mogen comfortwinst niet ondermijnen.</p><small>Ventilatiebesluit expliciet maken vóór installatiekeuze.</small></article><article class="risk"><h3>Saldering/netkosten</h3><p>Businesscase verschuift door afbouw saldering en netkosten.</p><small>Zelfconsumptie en load shifting prioriteren boven extra PV.</small></article><article class="risk"><h3>Bronnen incompleet</h3><p>Samenvatting bevat nog “bronnen nader aan te vullen”.</p><small>Bronregister toevoegen voor bouwdoc, P1, KNMI en offertes.</small></article></div></section><section class="section"><div class="section-head"><h2>Advies in één zin</h2></div><article class="card"><h3>Vraagreductie → lage-temperatuurarchitectuur → slimme sturing</h3><p>De beste waarde lijkt te ontstaan bij beperkte maar slimme investeringen: eerst de woning fysisch scherper maken, daarna een eenvoudige warmtepompconfiguratie kiezen, en vervolgens PV/EV/opslag slim sturen op comfort en lage netafname.</p></article></section><section class="section" id="bron"><div class="section-head"><h2>Bron / archiefsamenvatting</h2><p class="lead">Inklapbare brontekst uit het bestaande Markdown-archief. Bronnenvelden staan nog deels op “nader aan te vullen”.</p></div><details class="card"><summary><b>Toon volledige brontekst</b></summary><pre class="raw"># Archiefsamenvatting Project “H - Warm 2502”
+
+## 1. Doel van het project
+
+Het project richt zich op het technisch, energetisch en financieel optimaliseren van een twee-onder-een-kapwoning uit circa 1999/2001 in Zeewolde, met als hoofddoelen:
+
+- Zo gunstig mogelijk gasvrij worden.
+- Comfort verbeteren in winter én zomer.
+- Lage Total Cost of Ownership (TCO) over 15–36 jaar.
+- Maximale benutting van:
+  - bestaande vloermassa;
+  - vloerverwarming;
+  - zonnepanelen;
+  - EV;
+  - thermische opslag;
+  - slimme sturing.
+- Zo min mogelijk complexe installaties.
+- Toewerken naar een toekomstbestendige lage-temperatuurwoning.
+
+Het project combineert:
+
+- bouwkundige analyse;
+- energie-analyse;
+- klimaatgegevens;
+- financiële modellering;
+- installatietechniek;
+- ventilatie;
+- opslag;
+- koeling;
+- PV-optimalisatie;
+- batterijstrategie;
+- EV-integratie.
+
+---
+
+## 2. Woningspecificaties
+
+### Basis woning
+
+- Type: twee-onder-een-kap
+- Bouwjaar: 1999–2001
+- Oppervlak BG: ±60 m²
+- Geschatte totale GBO: ±135–195 m²
+- EPC origineel: 1.12–1.13
+- Huidige installatie: Nefit Trendline HRC25 CW4
+- Vloerverwarming: BG aanwezig als bijverwarming
+- Radiatoren: verdiepingen
+- Houtkachel: Stûv 21-85
+- PV-installatie: 20 × 405 Wp
+- EV: aanwezig
+- Ventilatie: mechanische afzuiging
+
+Bronnen: nader aan te vullen.
+
+---
+
+## 3. Bouwkundige analyse
+
+### Vloerconstructie
+
+Geïsoleerde ribcassettevloer met:
+
+- Rc circa 3.0–3.23 m²K/W;
+- zware thermische massa;
+- 90 mm cementdekvloer;
+- vloerverwarming aanwezig.
+
+Belangrijk inzicht: de woning heeft uitzonderlijk gunstige eigenschappen voor lage temperatuur verwarming.
+
+Belangrijke conclusie: de thermische massa van de BG-vloer is strategisch waardevol.
+
+Geschatte thermische opslag:
+
+- circa 31 ton massa;
+- circa 7.6 kWh opslag per °C vloeropwarming.
+
+Bronnen: nader aan te vullen.
+
+### Gevels
+
+Spouwmuur:
+
+- 95 mm Isover Mupan glaswol;
+- Rc circa 3.23;
+- kalkzandsteen binnenblad.
+
+Conclusie: nog acceptabel voor warmtepompbedrijf, maar kierdichting en kruipruimte-optimalisatie leveren relatief veel rendement.
+
+### Glas
+
+HR-glas:
+
+- U ≤ 1.8 W/m²K.
+
+Geen acute noodzaak voor vervanging naar triple glas.
+
+---
+
+## 4. Energieverbruik en productie
+
+### Historisch gasverbruik
+
+- Gemiddeld historisch: ±1417 m³/jaar.
+- 2024: ±1064 m³.
+
+Daling mede door:
+
+- houtkachel;
+- gedragsoptimalisatie;
+- lagere aanvoertemperaturen;
+- efficiënter gebruik.
+
+Bron: nader aan te vullen.
+
+### Elektriciteitsverbruik
+
+- Historisch: ±4160 kWh.
+- Recent: ±9500 kWh.
+
+Hoofdoorzaak recent hoger verbruik:
+
+- EV laden;
+- elektrificatie.
+
+### Zonnepanelen
+
+- Werkelijke productie: ±7155 kWh/jaar.
+
+Probleem:
+
+- groot deel teruglevering;
+- lage directe zelfconsumptie.
+
+Conclusie: opslag en load shifting zijn belangrijker geworden dan extra PV.
+
+---
+
+## 5. Data-analyse methode
+
+### Gebruikte databronnen
+
+HomeWizard P1 CSV-data:
+
+- gas;
+- elektra;
+- piekbelasting;
+- import/export.
+
+Bestanden:
+
+- P1g CSV;
+- P1e CSV.
+
+### KNMI-data
+
+Station:
+
+- Lelystad 269.
+
+Gebruikt voor:
+
+- HDD18;
+- regressie;
+- transmissieberekening;
+- piekbelasting.
+
+---
+
+## 6. Ontwikkelde methoden
+
+### Warmteverliesanalyse (Htr)
+
+Er is een vaste analysemethode ontwikkeld:
+
+**Warm-2502-Htr-agent**
+
+Functionaliteit:
+
+- Inlezen HomeWizard-data.
+- Koppelen KNMI-data.
+- Splitsen tapwater versus ruimteverwarming.
+- HDD18-berekening.
+- Lineaire regressie.
+- Berekenen Htr in W/K.
+- Specifiek warmteverlies per m².
+
+Belangrijk: niet gebaseerd op vuistregels maar op werkelijke meetdata.
+
+### Belangrijkste analytische uitgangspunten
+
+- HDD18 regressie.
+- Piekdaganalyse.
+- Werkelijke meetwaarden.
+- Correctie tapwater.
+- Thermische massa meenemen.
+- Geen standaard installateurslogica.
+
+---
+
+## 7. Belangrijkste technische inzichten
+
+### 7.1 Warmtepomp haalbaarheid
+
+Conclusie: de woning is zeer geschikt voor lage temperatuur verwarming.
+
+Belangrijkste redenen:
+
+- zware vloer;
+- vloerverwarming;
+- relatief goede schil;
+- stabiele binnentemperatuur;
+- lage transmissieverliezen.
+
+### 7.2 Grootste systeemeffecten
+
+Belangrijkste optimalisaties:
+
+- Kierdichting: circa 10% effect.
+- Tonzon bodemfolie: circa 5% effect.
+- Modulerende verdeler: groot effect.
+- Lage aanvoertemperatuur: groot effect.
+- Ventilatorconvector: groot comforteffect.
+- Slim buffervat: load shifting.
+- Slim laden EV: zelfconsumptie.
+
+### 7.3 Ventilatie
+
+Belangrijke discussies:
+
+- verse luchttoevoer;
+- kruipruimte-luchtkwaliteit;
+- WTW versus eenvoud;
+- luchtstromen rondom Stûv-haard;
+- zomerkoeling.
+
+Conclusie: volledige WTW alleen interessant indien integraal aangepakt.
+
+### 7.4 Houtkachel
+
+De Stûv 21-85:
+
+- blijft strategisch interessant als piekverwarming;
+- verlaagt piekbelasting warmtepomp;
+- vergroot leveringszekerheid.
+
+Maar: kruipruimte-lucht moet niet ongefilterd woonkamer in.
+
+---
+
+## 8. Scenario-ontwikkeling
+
+### Scenario B — huidige situatie
+
+Kenmerken:
+
+- cv-ketel;
+- mengverdeler;
+- gasgestookt;
+- minimale investering.
+
+Nadelen:
+
+- stijgende energiekosten;
+- afhankelijkheid gas;
+- lagere toekomstbestendigheid.
+
+### Scenario A+ / A+++
+
+Voorkeursrichting geworden.
+
+Kerncomponenten:
+
+- Warmtepomp: R290.
+- Temperatuur: 28–32 °C.
+- Buffer: 200–300 liter.
+- Verdeler: modulerend.
+- Koeling: actief/passief.
+- Ventilatorconvector: woonkamer.
+- EV-integratie: slim laden.
+- PV: bestaande installatie optimaliseren.
+
+---
+
+## 9. Strategische voorkeursrichting
+
+Latere projectfase leidde tot duidelijke voorkeursarchitectuur.
+
+### Voorkeursmodel
+
+A+:
+
+- NIBE S735C + SAM;
+- of compacte R290 lucht/water oplossing.
+
+Voorkeur:
+
+- minimale systeemcomplexiteit;
+- lage onderhoudslast;
+- goede zomerkoeling;
+- lage TCO.
+
+### Afwijzingen / twijfelpunten
+
+Minder interessant geworden:
+
+- overcomplexe hybride systemen;
+- grote WTW-trajecten;
+- extreem grote buffervaten;
+- extra zonnepanelen ten koste van esthetiek;
+- onnodig zware installaties.
+
+---
+
+## 10. Financiële inzichten
+
+### TCO-analyses
+
+Vergelijkingen gemaakt voor:
+
+- 9 jaar;
+- 18 jaar;
+- 36 jaar.
+
+Meegenomen:
+
+- CAPEX;
+- onderhoud;
+- energieprijzen;
+- inflatie;
+- vervanging;
+- subsidies;
+- salderingsafbouw.
+
+### Belangrijkste financiële conclusie
+
+De businesscase verschuift steeds meer richting:
+
+- elektrificatie;
+- opslag;
+- slim sturen;
+- minimaliseren netafname.
+
+Niet puur door gasprijs, maar vooral door:
+
+- verdwijnende saldering;
+- hogere netkosten;
+- betere benutting eigen opwek.
+
+---
+
+## 11. Batterij- en EV-strategie
+
+Belangrijkste onderwerpen:
+
+- SolarEdge;
+- Easee;
+- thuisbatterijen;
+- slim laden;
+- dynamische tarieven;
+- EV als flexibel verbruik.
+
+Conclusie: belangrijker dan méér zonnepanelen is slimmer gebruik van bestaande productie.
+
+---
+
+## 12. Comfort en gezondheid
+
+Belangrijke comfortthema’s:
+
+- zomerkoeling;
+- stabiele binnentemperatuur;
+- tochtreductie;
+- luchtkwaliteit;
+- geluidsniveau installaties.
+
+---
+
+## 13. Renovatieprojecten meegenomen
+
+### Keukenuitbouw
+
+Plannen:
+
+- doorbraak achterwand;
+- uitbreiding keuken;
+- extra vloerverwarming;
+- nieuwe PVC vloer.
+
+PVC-offerte:
+
+- ± EUR 3938.
+
+---
+
+## 14. Methodologische evolutie
+
+Het project ontwikkelde zich van losse verduurzamingsvragen naar een integraal woningenergiesysteem.
+
+Belangrijk verschil met standaard installatieroutes:
+
+- data-gedreven;
+- fysica-gedreven;
+- langdurige TCO-focus;
+- integratie EV/PV/opslag/comfort.
+
+---
+
+## 15. Belangrijkste eindconclusies
+
+### Technisch
+
+De woning is:
+
+- bovengemiddeld geschikt voor lage temperatuur verwarming;
+- geschikt voor warmtepomp;
+- thermisch stabiel;
+- gunstig qua massa.
+
+### Strategisch
+
+De optimale richting is waarschijnlijk:
+
+1. Vraagreductie eerst.
+2. Daarna eenvoudige lage temperatuurarchitectuur.
+3. Slimme opslag/sturing.
+4. Geen overengineering.
+
+### Financieel
+
+De beste waarde lijkt te ontstaan bij:
+
+- beperkte maar slimme investeringen;
+- maximale benutting bestaande infrastructuur;
+- lage complexiteit;
+- goede regeling.
+
+---
+
+## 16. Nog openstaande onderwerpen
+
+Nog nader uit te werken:
+
+- Definitieve Htr-bepaling met volledige regressie.
+- Exacte warmtepompdimensionering.
+- Definitieve ventilatiestrategie.
+- Integrale zomerkoeling.
+- Batterijgrootte optimalisatie.
+- Dynamische energiesturing.
+- Integratie Home Assistant.
+- Werkelijke SCOP onder praktijkcondities.
+- Concrete uitvoeringsfasering.
+
+---
+
+## 17. Belangrijkste projectbestanden
+
+### Constructie en woning
+
+- “Warm - Gem - aanvullende informatie…”
+- “Extract bouwdocumenten…”
+
+### Data
+
+- P1 elektriciteit CSV
+- P1 gas CSV
+- KNMI Lelystad data
+
+### Methodologie
+
+- “Prompt instructie nauwkeurige berekening”
+
+---
+
+## Status
+
+- Type document: archiefsamenvatting
+- Project: H - Warm 2502
+- Domeinmap: energie
+- Laatste opslag: 2026-05-22
+</pre></details></section><footer class="footer"><p><b>Bestand:</b> /home/hermes/energie/H - Warm 2502 - projectdashboard.html<br><b>Bron:</b> /home/hermes/energie/H - Warm 2502 - archiefsamenvatting.md<br><b>Status:</b> ontworpen als zelfstandig HTML-dashboard; print/PDF via browser mogelijk. <span class="print-note">Printweergave actief.</span></p></footer></main><script>const key='warm2502-theme';const saved=localStorage.getItem(key);if(saved)document.documentElement.dataset.theme=saved;document.getElementById('themeBtn').addEventListener('click',()=>{const cur=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=cur;localStorage.setItem(key,cur);});</script></body></html>
