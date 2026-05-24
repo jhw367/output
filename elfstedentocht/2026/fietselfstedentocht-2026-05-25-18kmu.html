@@ -61,7 +61,7 @@
       <p class="subtitle">Klik op een plaatsnaam, vul je echte doorkomsttijd in, en de rest van de route wordt opnieuw doorgerekend. Jouw aanpassing blijft alleen op dit apparaat bewaard.</p>
       <div class="stats"><div class="stat"><b>05:16</b><span>Start Bolsward</span></div><div class="stat"><b>235 km</b><span>Totale route</span></div><div class="stat"><b>18</b><span>km/u gemiddeld</span></div></div>
       <div class="finish"><div><span data-role="finish-label">Verwachte finish Bolsward</span><br><strong id="finishTime">18:19</strong></div><div style="text-align:right"><span>Totale fietstijd</span><br><strong id="totalTime">13:03</strong></div></div>
-      <div class="controls"><div class="hint" id="statusText">Planmodus: oorspronkelijke planning. Tik op een plaatsnaam om jouw actuele tijd vanaf daar door te rekenen.</div><div class="button-row"><button class="small-btn primary" id="nowBtn" type="button">Nu bij gekozen plaats</button><button class="small-btn" id="resetBtn" type="button">Reset naar planning</button></div></div>
+      <div class="controls"><div class="hint" id="statusText">Planmodus: oorspronkelijke planning. Tik op een plaatsnaam om jouw actuele tijd vanaf daar door te rekenen.</div><div class="button-row"><button class="small-btn primary" id="nowBtn" type="button">Nu bij gekozen plaats</button><button class="small-btn" id="confirmBtn" type="button">Bevestig & deel tijden</button><button class="small-btn" id="resetBtn" type="button">Reset naar planning</button></div></div>
     </section>
     <div class="section-title"><h2>Schema onderweg</h2><div class="note">Tik plaatsnaam → herbereken</div></div>
     <section class="timeline" id="timeline">
@@ -209,6 +209,7 @@
     const TOTAL = 235;
     const START_MIN = 5 * 60 + 16;
     const STORAGE_KEY = 'fietselfstedentocht-2026-05-25-adjustment-v1';
+    const SHARE_PARAM = 'herplan';
     const cards = Array.from(document.querySelectorAll('.card'));
     const dialog = document.getElementById('timeDialog');
     const timeInput = document.getElementById('timeInput');
@@ -218,7 +219,7 @@
     const finishTime = document.getElementById('finishTime');
     const totalTime = document.getElementById('totalTime');
     let selectedIndex = null;
-    let adjustment = loadAdjustment();
+    let adjustment = loadSharedAdjustment() || loadAdjustment();
 
     function pad(n) { return String(n).padStart(2, '0'); }
     function fmt(mins) { mins = ((Math.round(mins) % 1440) + 1440) % 1440; return `${pad(Math.floor(mins / 60))}:${pad(mins % 60)}`; }
@@ -228,8 +229,31 @@
     function doneKm(card) { return Number(card.dataset.done); }
     function place(card) { return card.dataset.place; }
     function loadAdjustment() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null'); } catch(e) { return null; } }
+    function loadSharedAdjustment() {
+      const raw = new URLSearchParams(location.search).get(SHARE_PARAM);
+      if (!raw) return null;
+      const m = /^(\d+)-(\d{1,2})(\d{2})$/.exec(raw);
+      if (!m) return null;
+      const index = Number(m[1]);
+      const timeMin = Number(m[2]) * 60 + Number(m[3]);
+      if (!Number.isInteger(index) || index < 0 || index >= cards.length || timeMin < 0 || timeMin >= 1440) return null;
+      return { index, timeMin, savedAt: new Date().toISOString(), shared: true };
+    }
+    function shareCode(a) { return `${a.index}-${fmt(a.timeMin).replace(':','')}`; }
+    function shareUrl(a) {
+      const url = new URL(location.href);
+      url.searchParams.set(SHARE_PARAM, shareCode(a));
+      return url.toString();
+    }
+    async function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(text);
+      else {
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+      }
+    }
     function saveAdjustment(a) { adjustment = a; localStorage.setItem(STORAGE_KEY, JSON.stringify(a)); render(); }
-    function reset() { adjustment = null; localStorage.removeItem(STORAGE_KEY); render(); }
+    function reset() { adjustment = null; localStorage.removeItem(STORAGE_KEY); if (new URLSearchParams(location.search).has(SHARE_PARAM)) history.replaceState(null, '', location.pathname); render(); }
     function computedMin(card) {
       if (!adjustment) return plannedMin(card);
       const idx = Number(card.dataset.index);
@@ -256,7 +280,8 @@
       totalTime.textContent = dur(Math.max(0, computedMin(finishCard) - START_MIN));
       if (adjustment) {
         const anchor = cards[adjustment.index];
-        statusText.textContent = `Persoonlijke modus: vanaf ${place(anchor)} om ${fmt(adjustment.timeMin)}. Reset om terug te gaan naar de oorspronkelijke planning.`;
+        const sharedText = adjustment.shared ? ' Deze tijden komen uit een gedeelde bevestigde link.' : '';
+        statusText.textContent = `Persoonlijke modus: vanaf ${place(anchor)} om ${fmt(adjustment.timeMin)}. Klik “Bevestig & deel tijden” om dit zichtbaar te maken voor anderen via een deel-link.${sharedText}`;
       } else {
         statusText.textContent = 'Planmodus: oorspronkelijke planning. Tik op een plaatsnaam om jouw actuele tijd vanaf daar door te rekenen.';
       }
@@ -279,6 +304,24 @@
     }
     cards.forEach((card, idx) => card.querySelector('[data-action="set-time"]').addEventListener('click', () => openDialog(idx)));
     document.getElementById('resetBtn').addEventListener('click', reset);
+    document.getElementById('confirmBtn').addEventListener('click', async () => {
+      if (!adjustment) {
+        alert('Kies eerst een plaats en tijd. Daarna kun je de aangepaste tijden delen.');
+        return;
+      }
+      const url = shareUrl(adjustment);
+      const anchor = cards[adjustment.index];
+      const msg = `Bevestigde Fietselfstedentocht-tijden vanaf ${place(anchor)} om ${fmt(adjustment.timeMin)}. Deze tijden zijn zichtbaar voor andere gebruikers via deze link:\n${url}`;
+      if (navigator.share) {
+        try { await navigator.share({ title: 'Fietselfstedentocht tijden', text: msg, url }); }
+        catch(e) { await copyText(url); alert('Deellink gekopieerd. Stuur deze link door; andere gebruikers zien dan dezelfde aangepaste tijden.'); }
+      } else {
+        await copyText(url);
+        alert('Deellink gekopieerd. Stuur deze link door; andere gebruikers zien dan dezelfde aangepaste tijden.');
+      }
+      adjustment.shared = true;
+      saveAdjustment(adjustment);
+    });
     document.getElementById('nowBtn').addEventListener('click', () => { const idx = adjustment ? adjustment.index : 0; openDialog(idx, true); });
     document.getElementById('saveTimeBtn').addEventListener('click', (e) => { e.preventDefault(); applyTime(timeInput.value); dialog.close(); });
     render();
