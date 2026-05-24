@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="app-version" content="20260524-174624" />
+  <title>Fietselfstedentocht — interactief schema 18 km/u</title>
+  <style>
+    :root {
+      --bg:#07111f; --panel:#0d1b2f; --text:#ecf7ff; --muted:#9fb4c8; --accent:#62d6ff; --accent-2:#7cffc4; --warn:#ffd166; --hot:#ff8fab; --shadow:0 18px 45px rgba(0,0,0,.35); --radius:22px;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; color:var(--text); background:radial-gradient(circle at 15% 0%,rgba(98,214,255,.28),transparent 30%),radial-gradient(circle at 90% 5%,rgba(124,255,196,.18),transparent 28%),linear-gradient(180deg,#07111f 0%,#09172a 48%,#050a13 100%); min-height:100vh; padding:env(safe-area-inset-top) 14px env(safe-area-inset-bottom); }
+    .wrap { width:100%; max-width:560px; margin:0 auto; padding:16px 0 26px; }
+    header { position:sticky; top:0; z-index:5; margin:-1px -14px 14px; padding:12px 14px 13px; background:rgba(7,17,31,.86); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,.09); }
+    .topline { display:flex; justify-content:space-between; gap:12px; align-items:center; }
+    .topline span { color:var(--muted); font-size:12px; }
+    .hero { border:1px solid rgba(255,255,255,.12); background:linear-gradient(145deg,rgba(16,36,62,.95),rgba(13,27,47,.88)); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px; overflow:hidden; position:relative; }
+    .hero:after { content:""; position:absolute; right:-42px; top:-46px; width:145px; height:145px; border-radius:999px; border:18px solid rgba(98,214,255,.13); pointer-events:none; }
+    .eyebrow { display:inline-flex; gap:7px; align-items:center; color:var(--accent-2); font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; margin-bottom:8px; }
+    h1 { margin:0; font-size:clamp(25px,7vw,36px); line-height:.98; letter-spacing:-.04em; }
+    .subtitle { margin:10px 0 0; color:var(--muted); font-size:14px; line-height:1.45; max-width:36em; }
+    .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:16px; }
+    .stat { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.09); border-radius:16px; padding:10px 8px; min-height:70px; }
+    .stat b { display:block; font-size:18px; letter-spacing:-.02em; } .stat span { color:var(--muted); font-size:11px; line-height:1.2; }
+    .finish { margin-top:12px; display:flex; align-items:center; justify-content:space-between; gap:12px; background:linear-gradient(90deg,rgba(124,255,196,.18),rgba(98,214,255,.10)); border:1px solid rgba(124,255,196,.22); border-radius:16px; padding:12px; }
+    .finish span { color:var(--muted); font-size:12px; } .finish strong { font-size:24px; letter-spacing:-.03em; }
+    .controls { margin-top:12px; display:grid; gap:8px; }
+    .planning-panel { margin-top:14px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(145deg,rgba(16,36,62,.92),rgba(13,27,47,.82)); border-radius:18px; padding:14px; box-shadow:0 10px 24px rgba(0,0,0,.18); }
+    .planning-panel h2 { margin:0 0 8px; font-size:17px; }
+    .hint { color:var(--muted); background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:10px 12px; font-size:12px; line-height:1.35; }
+    .button-row { display:flex; gap:8px; flex-wrap:wrap; }
+    button, input { font:inherit; }
+    .small-btn { border:1px solid rgba(255,255,255,.13); background:rgba(255,255,255,.08); color:var(--text); border-radius:999px; padding:9px 12px; font-size:12px; font-weight:800; cursor:pointer; }
+    .small-btn.primary { color:#06111c; background:var(--accent-2); border-color:transparent; }
+    .small-btn:active, .place:active { transform:translateY(1px); }
+    .section-title { display:flex; align-items:end; justify-content:space-between; gap:10px; margin:18px 2px 10px; } h2 { margin:0; font-size:17px; letter-spacing:-.02em; } .note { color:var(--muted); font-size:12px; text-align:right; }
+    .timeline { display:grid; gap:10px; }
+    .card { display:grid; grid-template-columns:72px 1fr; gap:12px; align-items:stretch; border:1px solid rgba(255,255,255,.10); background:rgba(13,27,47,.82); border-radius:18px; box-shadow:0 10px 24px rgba(0,0,0,.18); overflow:hidden; cursor:pointer; }
+    .card:hover { border-color:rgba(98,214,255,.34); }
+    .card:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+    .card.adjusted { border-color:rgba(124,255,196,.45); box-shadow:0 10px 28px rgba(124,255,196,.09); }
+    .time { display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(180deg,rgba(98,214,255,.18),rgba(255,255,255,.04)); border-right:1px solid rgba(255,255,255,.09); padding:12px 6px; }
+    .time strong { font-size:20px; letter-spacing:-.04em; } .time span { color:var(--muted); font-size:10px; margin-top:2px; }
+    .content { padding:12px 12px 12px 0; min-width:0; } .place-row { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
+    .place { appearance:none; border:0; background:transparent; color:var(--text); padding:0; margin:0; text-align:left; font-weight:850; font-size:16px; letter-spacing:-.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; cursor:pointer; text-decoration:underline; text-decoration-color:rgba(98,214,255,.55); text-underline-offset:4px; }
+    .place:focus-visible { outline:2px solid var(--accent); border-radius:6px; }
+    .tag { flex:0 0 auto; font-size:10px; color:#06111c; background:var(--accent-2); border-radius:999px; padding:4px 7px; font-weight:850; } .tag.yellow { background:var(--warn); } .tag.blue { background:var(--accent); }
+    .meta { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-bottom:8px; } .meta div { background:rgba(255,255,255,.055); border-radius:10px; padding:7px 6px; } .meta b { display:block; font-size:12px; } .meta span { display:block; color:var(--muted); font-size:9px; margin-top:1px; }
+    .bar { height:7px; background:rgba(255,255,255,.10); border-radius:999px; overflow:hidden; } .bar i { display:block; height:100%; width:var(--p); border-radius:inherit; background:linear-gradient(90deg,var(--accent),var(--accent-2)); }
+    .adjust-note { min-height:14px; margin-top:7px; color:var(--accent-2); font-size:11px; }
+    dialog { width:min(92vw,430px); border:1px solid rgba(255,255,255,.16); border-radius:22px; color:var(--text); background:#0d1b2f; box-shadow:var(--shadow); padding:0; } dialog::backdrop { background:rgba(0,0,0,.58); backdrop-filter:blur(3px); }
+    .dialog-inner { padding:18px; } .dialog-inner h3 { margin:0 0 6px; font-size:20px; } .dialog-inner p { margin:0 0 14px; color:var(--muted); font-size:13px; line-height:1.4; }
+    .time-input { width:100%; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.08); color:var(--text); border-radius:14px; padding:12px; font-size:20px; font-weight:800; }
+    .dialog-actions { display:flex; gap:8px; justify-content:flex-end; margin-top:14px; }
+    footer { color:var(--muted); font-size:11px; line-height:1.45; padding:16px 4px 4px; text-align:center; }
+    @media (max-width:360px) { body { padding-left:10px; padding-right:10px; } header { margin-left:-10px; margin-right:-10px; padding-left:10px; padding-right:10px; } .card { grid-template-columns:66px 1fr; gap:10px; } .time strong { font-size:18px; } .place { font-size:15px; } .meta { grid-template-columns:repeat(2,1fr); } .stats { gap:6px; } .stat b { font-size:16px; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap" style="padding:0"><div class="topline"><strong style="font-size:14px">Fietselfstedentocht</strong><span>25 mei 2026 · 18 km/u</span></div></div></header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">🚴 Interactief schema</div>
+      <h1>Geschatte doorkomsttijden</h1>
+      <p class="subtitle">Tik op een regel/kaart, vul je echte doorkomsttijd in, en de rest van de route wordt opnieuw doorgerekend. Jouw aanpassing blijft alleen op dit apparaat bewaard.</p>
+      <div class="stats"><div class="stat"><b>05:16</b><span>Start Bolsward</span></div><div class="stat"><b>235 km</b><span>Totale route</span></div><div class="stat"><b>18</b><span>km/u gemiddeld</span></div></div>
+      <div class="finish"><div><span data-role="finish-label">Verwachte finish Bolsward</span><br><strong id="finishTime">18:19</strong></div><div style="text-align:right"><span>Totale fietstijd</span><br><strong id="totalTime">13:03</strong></div></div>
+    </section>
+    <div class="section-title"><h2>Schema onderweg</h2><div class="note">Tik kaart → herbereken</div></div>
+    <section class="timeline" id="timeline">
+      <article class="card" role="button" tabindex="0" data-index="0" data-place="Bolsward — start" data-remaining="235" data-done="0" data-planned-min="316" data-elapsed-min="0">
+        <div class="time"><strong data-role="time">05:16</strong><span data-role="elapsed">+00:00</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Bolsward — start">Bolsward — start</button><span class="tag blue">START</span></div>
+          <div class="meta"><div><b>235 km</b><span>nog te gaan</span></div><div><b>0 km</b><span>gereden</span></div><div><b>0%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:0.0%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="1" data-place="Harlingen" data-remaining="216" data-done="19" data-planned-min="379" data-elapsed-min="63">
+        <div class="time"><strong data-role="time">06:19</strong><span data-role="elapsed">+01:03</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Harlingen">Harlingen</button></div>
+          <div class="meta"><div><b>216 km</b><span>nog te gaan</span></div><div><b>19 km</b><span>gereden</span></div><div><b>8%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:8.1%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="2" data-place="Franeker" data-remaining="208" data-done="27" data-planned-min="406" data-elapsed-min="90">
+        <div class="time"><strong data-role="time">06:46</strong><span data-role="elapsed">+01:30</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Franeker">Franeker</button></div>
+          <div class="meta"><div><b>208 km</b><span>nog te gaan</span></div><div><b>27 km</b><span>gereden</span></div><div><b>11%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:11.5%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="3" data-place="Holwerd" data-remaining="170" data-done="65" data-planned-min="533" data-elapsed-min="217">
+        <div class="time"><strong data-role="time">08:53</strong><span data-role="elapsed">+03:37</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Holwerd">Holwerd</button></div>
+          <div class="meta"><div><b>170 km</b><span>nog te gaan</span></div><div><b>65 km</b><span>gereden</span></div><div><b>28%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:27.7%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="4" data-place="Dokkum" data-remaining="158" data-done="77" data-planned-min="573" data-elapsed-min="257">
+        <div class="time"><strong data-role="time">09:33</strong><span data-role="elapsed">+04:17</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Dokkum">Dokkum</button></div>
+          <div class="meta"><div><b>158 km</b><span>nog te gaan</span></div><div><b>77 km</b><span>gereden</span></div><div><b>33%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:32.8%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="5" data-place="Leeuwarden" data-remaining="132" data-done="103" data-planned-min="659" data-elapsed-min="343">
+        <div class="time"><strong data-role="time">10:59</strong><span data-role="elapsed">+05:43</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Leeuwarden">Leeuwarden</button></div>
+          <div class="meta"><div><b>132 km</b><span>nog te gaan</span></div><div><b>103 km</b><span>gereden</span></div><div><b>44%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:43.8%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="6" data-place="Bolsward — tijdcontrole" data-remaining="97" data-done="138" data-planned-min="776" data-elapsed-min="460">
+        <div class="time"><strong data-role="time">12:56</strong><span data-role="elapsed">+07:40</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Bolsward — tijdcontrole">Bolsward — tijdcontrole</button><span class="tag yellow">CHECK</span></div>
+          <div class="meta"><div><b>97 km</b><span>nog te gaan</span></div><div><b>138 km</b><span>gereden</span></div><div><b>59%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:58.7%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="7" data-place="Sneek" data-remaining="87" data-done="148" data-planned-min="809" data-elapsed-min="493">
+        <div class="time"><strong data-role="time">13:29</strong><span data-role="elapsed">+08:13</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Sneek">Sneek</button></div>
+          <div class="meta"><div><b>87 km</b><span>nog te gaan</span></div><div><b>148 km</b><span>gereden</span></div><div><b>63%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:63.0%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="8" data-place="IJlst" data-remaining="82" data-done="153" data-planned-min="826" data-elapsed-min="510">
+        <div class="time"><strong data-role="time">13:46</strong><span data-role="elapsed">+08:30</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor IJlst">IJlst</button></div>
+          <div class="meta"><div><b>82 km</b><span>nog te gaan</span></div><div><b>153 km</b><span>gereden</span></div><div><b>65%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:65.1%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="9" data-place="Sloten" data-remaining="61" data-done="174" data-planned-min="896" data-elapsed-min="580">
+        <div class="time"><strong data-role="time">14:56</strong><span data-role="elapsed">+09:40</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Sloten">Sloten</button></div>
+          <div class="meta"><div><b>61 km</b><span>nog te gaan</span></div><div><b>174 km</b><span>gereden</span></div><div><b>74%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:74.0%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="10" data-place="Oudemirdum" data-remaining="47" data-done="188" data-planned-min="943" data-elapsed-min="627">
+        <div class="time"><strong data-role="time">15:43</strong><span data-role="elapsed">+10:27</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Oudemirdum">Oudemirdum</button></div>
+          <div class="meta"><div><b>47 km</b><span>nog te gaan</span></div><div><b>188 km</b><span>gereden</span></div><div><b>80%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:80.0%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="11" data-place="Stavoren" data-remaining="31" data-done="204" data-planned-min="996" data-elapsed-min="680">
+        <div class="time"><strong data-role="time">16:36</strong><span data-role="elapsed">+11:20</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Stavoren">Stavoren</button></div>
+          <div class="meta"><div><b>31 km</b><span>nog te gaan</span></div><div><b>204 km</b><span>gereden</span></div><div><b>87%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:86.8%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="12" data-place="Hindeloopen" data-remaining="20" data-done="215" data-planned-min="1033" data-elapsed-min="717">
+        <div class="time"><strong data-role="time">17:13</strong><span data-role="elapsed">+11:57</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Hindeloopen">Hindeloopen</button></div>
+          <div class="meta"><div><b>20 km</b><span>nog te gaan</span></div><div><b>215 km</b><span>gereden</span></div><div><b>91%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:91.5%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="13" data-place="Workum" data-remaining="12" data-done="223" data-planned-min="1059" data-elapsed-min="743">
+        <div class="time"><strong data-role="time">17:39</strong><span data-role="elapsed">+12:23</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Workum">Workum</button></div>
+          <div class="meta"><div><b>12 km</b><span>nog te gaan</span></div><div><b>223 km</b><span>gereden</span></div><div><b>95%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:94.9%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" data-index="14" data-place="Bolsward — finish" data-remaining="0" data-done="235" data-planned-min="1099" data-elapsed-min="783">
+        <div class="time"><strong data-role="time">18:19</strong><span data-role="elapsed">+13:03</span></div>
+        <div class="content">
+          <div class="place-row"><button class="place" type="button" data-action="set-time" aria-label="Nieuwe tijd instellen voor Bolsward — finish">Bolsward — finish</button><span class="tag">FINISH</span></div>
+          <div class="meta"><div><b>0 km</b><span>nog te gaan</span></div><div><b>235 km</b><span>gereden</span></div><div><b>100%</b><span>route</span></div></div>
+          <div class="bar"><i style="--p:100.0%"></i></div>
+          <div class="adjust-note" data-role="note"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="planning-panel" id="planningModule">
+      <h2>Planning aanpassen</h2>
+      <div class="controls"><div class="hint" id="statusText">Planmodus: oorspronkelijke planning. Tik op een kaart/regel om jouw actuele tijd vanaf daar door te rekenen.</div><div class="button-row"><button class="small-btn primary" id="nowBtn" type="button">Nu bij gekozen plaats</button><button class="small-btn" id="confirmBtn" type="button">Bevestig & deel tijden</button><button class="small-btn" id="resetBtn" type="button">Reset naar planning</button></div></div>
+    </section>
+
+    <footer>Berekend als: gereden afstand ÷ 18 km/u, afgerond op minuten. Aanpassingen worden per gebruiker opgeslagen in de browser van dit apparaat via localStorage.</footer>
+  </main>
+  <dialog id="timeDialog"><form method="dialog" class="dialog-inner"><h3 id="dialogTitle">Tijd aanpassen</h3><p id="dialogText">Vul je echte doorkomsttijd in. Vanaf deze plaats wordt de rest opnieuw berekend.</p><input class="time-input" id="timeInput" type="time" required><div class="dialog-actions"><button class="small-btn" value="cancel">Annuleer</button><button class="small-btn primary" id="saveTimeBtn" value="default">Bewaar</button></div></form></dialog>
+  <script>
+    const SPEED = 18;
+    const TOTAL = 235;
+    const START_MIN = 5 * 60 + 16;
+    const STORAGE_KEY = 'fietselfstedentocht-2026-05-25-adjustment-v1';
+    const SHARE_PARAM = 'herplan';
+    const BUILD_VERSION = '20260524-174624';
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const dialog = document.getElementById('timeDialog');
+    const timeInput = document.getElementById('timeInput');
+    const dialogTitle = document.getElementById('dialogTitle');
+    const dialogText = document.getElementById('dialogText');
+    const statusText = document.getElementById('statusText');
+    const finishTime = document.getElementById('finishTime');
+    const totalTime = document.getElementById('totalTime');
+    let selectedIndex = null;
+    let adjustment = loadSharedAdjustment() || loadAdjustment();
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+    function fmt(mins) { mins = ((Math.round(mins) % 1440) + 1440) % 1440; return `${pad(Math.floor(mins / 60))}:${pad(mins % 60)}`; }
+    function dur(mins) { mins = Math.round(mins); return `${pad(Math.floor(mins / 60))}:${pad(mins % 60)}`; }
+    function parseHHMM(v) { const m = /^(\d{1,2}):(\d{2})$/.exec(v || ''); if (!m) return null; const h=+m[1], min=+m[2]; if (h>23 || min>59) return null; return h*60+min; }
+    function plannedMin(card) { return Number(card.dataset.plannedMin); }
+    function doneKm(card) { return Number(card.dataset.done); }
+    function place(card) { return card.dataset.place; }
+    function loadAdjustment() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null'); } catch(e) { return null; } }
+    function loadSharedAdjustment() {
+      const raw = new URLSearchParams(location.search).get(SHARE_PARAM);
+      if (!raw) return null;
+      const m = /^(\d+)-(\d{1,2})(\d{2})$/.exec(raw);
+      if (!m) return null;
+      const index = Number(m[1]);
+      const timeMin = Number(m[2]) * 60 + Number(m[3]);
+      if (!Number.isInteger(index) || index < 0 || index >= cards.length || timeMin < 0 || timeMin >= 1440) return null;
+      return { index, timeMin, savedAt: new Date().toISOString(), shared: true };
+    }
+    function shareCode(a) { return `${a.index}-${fmt(a.timeMin).replace(':','')}`; }
+    function shareUrl(a) {
+      const url = new URL(location.href);
+      url.searchParams.set(SHARE_PARAM, shareCode(a));
+      return url.toString();
+    }
+    async function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(text);
+      else {
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+      }
+    }
+    function saveAdjustment(a) { adjustment = a; localStorage.setItem(STORAGE_KEY, JSON.stringify(a)); render(); }
+    function reset() { adjustment = null; localStorage.removeItem(STORAGE_KEY); if (new URLSearchParams(location.search).has(SHARE_PARAM)) history.replaceState(null, '', location.pathname); render(); }
+    function computedMin(card) {
+      if (!adjustment) return plannedMin(card);
+      const idx = Number(card.dataset.index);
+      if (idx < adjustment.index) return plannedMin(card);
+      const anchor = cards[adjustment.index];
+      const extraKm = doneKm(card) - doneKm(anchor);
+      return adjustment.timeMin + Math.round(extraKm / SPEED * 60);
+    }
+    function render() {
+      cards.forEach(card => {
+        const mins = computedMin(card);
+        const elapsed = mins - START_MIN;
+        card.querySelector('[data-role="time"]').textContent = fmt(mins);
+        card.querySelector('[data-role="elapsed"]').textContent = '+' + dur(Math.max(0, elapsed));
+        const idx = Number(card.dataset.index);
+        const note = card.querySelector('[data-role="note"]');
+        card.classList.toggle('adjusted', !!adjustment && idx >= adjustment.index);
+        if (adjustment && idx === adjustment.index) note.textContent = 'Herberekend vanaf hier · bewaard op dit apparaat';
+        else if (adjustment && idx > adjustment.index) note.textContent = 'Nieuwe verwachting';
+        else note.textContent = '';
+      });
+      const finishCard = cards[cards.length - 1];
+      finishTime.textContent = fmt(computedMin(finishCard));
+      totalTime.textContent = dur(Math.max(0, computedMin(finishCard) - START_MIN));
+      if (adjustment) {
+        const anchor = cards[adjustment.index];
+        const sharedText = adjustment.shared ? ' Deze tijden komen uit een gedeelde bevestigde link.' : '';
+        statusText.textContent = `Persoonlijke modus: vanaf ${place(anchor)} om ${fmt(adjustment.timeMin)}. Klik “Bevestig & deel tijden” om dit zichtbaar te maken voor anderen via een deel-link.${sharedText}`;
+      } else {
+        statusText.textContent = 'Planmodus: oorspronkelijke planning. Tik op een kaart/regel om jouw actuele tijd vanaf daar door te rekenen.';
+      }
+    }
+    function openDialog(index, useNow=false) {
+      selectedIndex = index;
+      const card = cards[index];
+      const defaultMin = useNow ? new Date().getHours()*60 + new Date().getMinutes() : computedMin(card);
+      dialogTitle.textContent = place(card);
+      dialogText.textContent = 'Vul je echte doorkomsttijd in. Vanaf deze plaats wordt de rest van de route opnieuw berekend met 18 km/u.';
+      timeInput.value = fmt(defaultMin);
+      if (typeof dialog.showModal === 'function') dialog.showModal();
+      else { const v = prompt(`${place(card)} — tijd HH:MM`, timeInput.value); if (v) applyTime(v); }
+      setTimeout(() => timeInput.focus(), 50);
+    }
+    function applyTime(v) {
+      const mins = parseHHMM(v);
+      if (mins == null || selectedIndex == null) return;
+      saveAdjustment({ index:selectedIndex, timeMin:mins, savedAt:new Date().toISOString() });
+    }
+    cards.forEach((card, idx) => {
+      card.querySelector('[data-action="set-time"]').addEventListener('click', (event) => { event.stopPropagation(); openDialog(idx); });
+      card.addEventListener('click', () => openDialog(idx));
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openDialog(idx);
+        }
+      });
+    });
+    document.getElementById('resetBtn').addEventListener('click', reset);
+    document.getElementById('confirmBtn').addEventListener('click', async () => {
+      if (!adjustment) {
+        alert('Kies eerst een plaats en tijd. Daarna kun je de aangepaste tijden delen.');
+        return;
+      }
+      const url = shareUrl(adjustment);
+      const anchor = cards[adjustment.index];
+      const msg = `Bevestigde Fietselfstedentocht-tijden vanaf ${place(anchor)} om ${fmt(adjustment.timeMin)}. Deze tijden zijn zichtbaar voor andere gebruikers via deze link:\n${url}`;
+      if (navigator.share) {
+        try { await navigator.share({ title: 'Fietselfstedentocht tijden', text: msg, url }); }
+        catch(e) { await copyText(url); alert('Deellink gekopieerd. Stuur deze link door; andere gebruikers zien dan dezelfde aangepaste tijden.'); }
+      } else {
+        await copyText(url);
+        alert('Deellink gekopieerd. Stuur deze link door; andere gebruikers zien dan dezelfde aangepaste tijden.');
+      }
+      adjustment.shared = true;
+      saveAdjustment(adjustment);
+    });
+    document.getElementById('nowBtn').addEventListener('click', () => { const idx = adjustment ? adjustment.index : 0; openDialog(idx, true); });
+    document.getElementById('saveTimeBtn').addEventListener('click', (e) => { e.preventDefault(); applyTime(timeInput.value); dialog.close(); });
+
+    async function checkForFreshVersion() {
+      if (!location.protocol.startsWith('http')) return;
+      try {
+        const url = new URL(location.href);
+        url.searchParams.set('_fresh', Date.now().toString());
+        const response = await fetch(url.toString(), { cache: 'no-store' });
+        const html = await response.text();
+        const match = html.match(/<meta name="app-version" content="(\d+)"/);
+        if (match && match[1] && match[1] !== BUILD_VERSION && !sessionStorage.getItem('fietselfstedentocht-refreshing')) {
+          sessionStorage.setItem('fietselfstedentocht-refreshing', '1');
+          location.replace(url.toString());
+        } else {
+          sessionStorage.removeItem('fietselfstedentocht-refreshing');
+        }
+      } catch(e) {}
+    }
+    render();
+    checkForFreshVersion();
+  </script>
+</body>
+</html>
