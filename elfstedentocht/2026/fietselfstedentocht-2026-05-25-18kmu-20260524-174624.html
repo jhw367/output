@@ -30,6 +30,8 @@
     .finish span { color:var(--muted); font-size:12px; } .finish strong { font-size:24px; letter-spacing:-.03em; }
     .controls { margin-top:12px; display:grid; gap:8px; }
     .planning-panel { margin-top:14px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(145deg,rgba(16,36,62,.92),rgba(13,27,47,.82)); border-radius:18px; padding:14px; box-shadow:0 10px 24px rgba(0,0,0,.18); }
+    .follower-panel { border-color:rgba(98,214,255,.22); background:linear-gradient(145deg,rgba(98,214,255,.12),rgba(13,27,47,.82)); }
+    .rider-panel { margin-top:20px; border-color:rgba(255,209,102,.24); background:linear-gradient(145deg,rgba(255,209,102,.10),rgba(13,27,47,.82)); }
     .planning-panel h2 { margin:0 0 8px; font-size:17px; }
     .hint { color:var(--muted); background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:10px 12px; font-size:12px; line-height:1.35; }
     .button-row { display:flex; gap:8px; flex-wrap:wrap; }
@@ -64,13 +66,18 @@
   <header><div class="wrap" style="padding:0"><div class="topline"><strong style="font-size:14px">Fietselfstedentocht</strong><span>25 mei 2026 · 18 km/u</span></div></div></header>
   <main class="wrap">
     <section class="hero">
-      <div class="eyebrow">🚴 Interactief schema</div>
-      <h1>Geschatte doorkomsttijden</h1>
-      <p class="subtitle">Tik op een regel/kaart, vul je echte doorkomsttijd in, en de rest van de route wordt opnieuw doorgerekend. Jouw aanpassing blijft alleen op dit apparaat bewaard.</p>
+      <div class="eyebrow">👀 Volgers-view</div>
+      <h1>Waar en wanneer?</h1>
+      <p class="subtitle">Bovenaan staat wat volgers nodig hebben: start, verwachte finish en alle doorkomsttijden. Fietser-tools en experimentele functies staan bewust onderaan.</p>
       <div class="stats"><div class="stat"><b>05:16</b><span>Start Bolsward</span></div><div class="stat"><b>235 km</b><span>Totale route</span></div><div class="stat"><b>18</b><span>km/u gemiddeld</span></div></div>
       <div class="finish"><div><span data-role="finish-label">Verwachte finish Bolsward</span><br><strong id="finishTime">18:19</strong></div><div style="text-align:right"><span>Totale fietstijd</span><br><strong id="totalTime">13:03</strong></div></div>
     </section>
-    <div class="section-title"><h2>Schema onderweg</h2><div class="note">Tik kaart → herbereken</div></div>
+    <section class="planning-panel follower-panel" id="followersTop">
+      <h2>Voor volgers</h2>
+      <div class="hint">Gebruik dit als kijk- en volgpagina: check de verwachte doorkomst per plaats. Als er een gedeelde herplan-link is gebruikt, zie je hier automatisch de aangepaste tijden.</div>
+    </section>
+
+    <div class="section-title"><h2>Voor volgers: doorkomsttijden</h2><div class="note">Alle tijden zichtbaar zonder iets aan te passen</div></div>
     <section class="timeline" id="timeline">
       <article class="card" role="button" tabindex="0" data-index="0" data-place="Bolsward — start" data-remaining="235" data-done="0" data-planned-min="316" data-elapsed-min="0">
         <div class="time"><strong data-role="time">05:16</strong><span data-role="elapsed">+00:00</span></div>
@@ -209,12 +216,13 @@
       </article>
     </section>
 
-    <section class="planning-panel" id="planningModule">
-      <h2>Planning aanpassen</h2>
-      <div class="controls"><div class="hint" id="statusText">Planmodus: oorspronkelijke planning. Tik op een kaart/regel om jouw actuele tijd vanaf daar door te rekenen.</div><div class="button-row"><button class="small-btn primary" id="nowBtn" type="button">Nu bij gekozen plaats</button><button class="small-btn" id="confirmBtn" type="button">Bevestig & deel tijden</button><button class="small-btn" id="resetBtn" type="button">Reset naar planning</button></div></div>
+    <section class="planning-panel rider-panel" id="planningModule">
+      <div class="eyebrow">🧪 Experimenteel · voor fietsers</div>
+      <h2>Fietser-tools onderaan</h2>
+      <div class="controls"><div class="hint" id="statusText">Planmodus: oorspronkelijke planning. Tik pas hier/onderweg op een kaart als je als fietser jouw actuele tijd wilt doorrekenen. Voor gewone volgers is niets invullen nodig.</div><div class="button-row"><button class="small-btn primary" id="nowBtn" type="button">Nu bij gekozen plaats</button><button class="small-btn" id="confirmBtn" type="button">Bevestig & deel tijden</button><button class="small-btn" id="resetBtn" type="button">Reset naar planning</button></div></div>
     </section>
 
-    <footer>Berekend als: gereden afstand ÷ 18 km/u, afgerond op minuten. Aanpassingen worden per gebruiker opgeslagen in de browser van dit apparaat via localStorage.</footer>
+    <footer>Volgers bovenaan: doorkomsttijden en finishverwachting. Fietsers onderaan: experimenteel herplannen/delen. Berekend als: gereden afstand ÷ 18 km/u, afgerond op minuten. Aanpassingen worden per gebruiker opgeslagen in de browser van dit apparaat via localStorage.</footer>
   </main>
   <dialog id="timeDialog"><form method="dialog" class="dialog-inner"><h3 id="dialogTitle">Tijd aanpassen</h3><p id="dialogText">Vul je echte doorkomsttijd in. Vanaf deze plaats wordt de rest opnieuw berekend.</p><input class="time-input" id="timeInput" type="time" required><div class="dialog-actions"><button class="small-btn" value="cancel">Annuleer</button><button class="small-btn primary" id="saveTimeBtn" value="default">Bewaar</button></div></form></dialog>
   <script>
@@ -295,9 +303,9 @@
       if (adjustment) {
         const anchor = cards[adjustment.index];
         const sharedText = adjustment.shared ? ' Deze tijden komen uit een gedeelde bevestigde link.' : '';
-        statusText.textContent = `Persoonlijke modus: vanaf ${place(anchor)} om ${fmt(adjustment.timeMin)}. Klik “Bevestig & deel tijden” om dit zichtbaar te maken voor anderen via een deel-link.${sharedText}`;
+        statusText.textContent = `Fietsermodus: vanaf ${place(anchor)} om ${fmt(adjustment.timeMin)}. Klik “Bevestig & deel tijden” om dit zichtbaar te maken voor volgers via een deel-link.${sharedText}`;
       } else {
-        statusText.textContent = 'Planmodus: oorspronkelijke planning. Tik op een kaart/regel om jouw actuele tijd vanaf daar door te rekenen.';
+        statusText.textContent = 'Fietsermodus: kies onderweg een kaart/plaats om jouw actuele tijd door te rekenen. Volgers hoeven niets in te vullen.';
       }
     }
     function openDialog(index, useNow=false) {
