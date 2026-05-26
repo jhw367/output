@@ -1,6 +1,6 @@
 # HLTH Europe 2026 → First Successful Deal Sprint Plan — lead-qualified update
 
-Updated: 2026-05-26 14:15 UTC
+Updated: 2026-05-26 16:19 UTC
 
 ## What changed
 
@@ -8,6 +8,20 @@ Updated: 2026-05-26 14:15 UTC
 - Split leads by account type: direct buyers, ecosystem influencers, implementation partners, regulatory/tender monitors.
 - Added named programmes/routes, procurement signals, technology-stack evidence, buyer personas and stakeholder interests.
 - Added demolish checks and CRM-ready next actions.
+- Added HLTH Europe logistics, daily meeting targets, RAI location/contact details and a Sales-People call-to-meeting operating script.
+
+## HLTH Europe logistics and operating targets
+
+- Official event: HLTH Europe 2026, 15–18 June 2026, RAI Convention Centre, Amsterdam. HLTH positions the event as Europe’s #1 healthcare innovation event and states it brings 5,000+ healthcare leaders/innovators, with one in three attendees at C-suite level.
+- Venue/contact route: RAI Amsterdam, Europaplein 24, 1078 GZ Amsterdam, The Netherlands; public central phone +31 (0)20 549 12 12.
+- Registration status: HLTH official event page shows registration open; sponsorship page signal says 2026 sponsorships are 70% sold out.
+- Event-role implication for Truviq: treat HLTH as a deadline and routing mechanism, not the whole sales motion. Use it to compress pre-event qualification, book 20-minute workflow-fit meetings, and create post-event proof-of-value follow-up.
+- Minimum meeting target: 12 accepted 20-minute meetings before/during HLTH; at least 6 must be direct buyers or insurer/programme teams, max 3 can be pure ecosystem validation meetings, and 0 should be generic “innovation chat” slots without a named workflow hypothesis.
+- Daily operating rhythm: 09:00 triage new replies; 11:30 reconfirm next-day meetings; 16:30 update CRM fields; 17:30 decide next-day top 5 walk-up/networking targets.
+- Sales-People ask: call only records with a sourced programme hook; ask “who owns this workflow/programme and is a 20-minute HLTH/June validation slot useful?” rather than pitching Camunda.
+- Required output per call: confirmed owner or routed name; programme/workflow; current platform/supplier; timing/procurement clue; HLTH attendance; meeting status; disqualifier.
+- Demolish check: HLTH may skew toward vendors, pharma, investors and innovation teams rather than Dutch operational budget owners. If accepted meetings are mostly innovation scouts, Truviq should down-rank them unless they can name the process owner and budget/procurement route.
+- Sources: https://hlth.com/events/europe and https://www.rai.nl/en/contact
 
 ## Lead plot and qualification
 
