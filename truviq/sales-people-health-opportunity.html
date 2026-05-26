@@ -1,16 +1,14 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta name="app-version" content="2026-05-26-1905"><title>Sales-People × Truviq health opportunity</title><style>:root{--bg:#07111f;--card:#13243b;--line:#2b4466;--ink:#eff7ff;--muted:#c7d8ea;--cyan:#66e3ff;--green:#75e6a0;--red:#ff9a9a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,#173b5a 0,#07111f 35%,#050b14 100%);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55}main{max-width:1080px;margin:auto;padding:32px 18px 60px}h1{font-size:clamp(2rem,6vw,4.3rem);line-height:.96;letter-spacing:-.05em;margin:.2em 0 .35em}h2{margin-top:2rem;color:var(--cyan);border-top:1px solid var(--line);padding-top:1.25rem}h3{color:var(--green)}p,li{color:var(--muted)}li{margin:.4rem 0}p,ul,ol{background:rgba(19,36,59,.62);border:1px solid var(--line);border-radius:14px;padding:.75rem 1rem}ul,ol{padding-left:2rem}a{color:var(--cyan);overflow-wrap:anywhere}code{background:#07111f;border:1px solid var(--line);border-radius:6px;padding:.05rem .3rem;color:#fff}b{color:#fff}@media(max-width:700px){main{padding:20px 12px 44px}p,ul,ol{padding:.75rem .85rem}ul,ol{padding-left:1.6rem}}</style></head><body><main><h1>Sales-People × Truviq health-market contribution note</h1>
-<p>Updated: 2026-05-26 19:05 UTC</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta name="app-version" content="2026-05-26-2205"><title>Sales-People × Truviq health opportunity</title><style>:root{--bg:#07111f;--card:#13243b;--line:#2b4466;--ink:#eff7ff;--muted:#c7d8ea;--cyan:#66e3ff;--green:#75e6a0;--red:#ff9a9a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,#173b5a 0,#07111f 35%,#050b14 100%);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55}main{max-width:1080px;margin:auto;padding:32px 18px 60px}h1{font-size:clamp(2rem,6vw,4.3rem);line-height:.96;letter-spacing:-.05em;margin:.2em 0 .35em}h2{margin-top:2rem;color:var(--cyan);border-top:1px solid var(--line);padding-top:1.25rem}h3{color:var(--green)}p,li{color:var(--muted)}li{margin:.4rem 0}p,ul,ol{background:rgba(19,36,59,.62);border:1px solid var(--line);border-radius:14px;padding:.75rem 1rem}ul,ol{padding-left:2rem}a{color:var(--cyan);overflow-wrap:anywhere}code{background:#07111f;border:1px solid var(--line);border-radius:6px;padding:.05rem .3rem;color:#fff}b,strong{color:#fff}@media(max-width:700px){main{padding:20px 12px 44px}p,ul,ol{padding:.75rem .85rem}ul,ol{padding-left:1.6rem}}</style></head><body><main><h1>Sales-People × Truviq health-market contribution note</h1>
+<p>Updated: 2026-05-26 22:05 UTC</p>
 <h2>What was implemented in the health-market dataset</h2>
 <ul>
 <li>Added <code>account_type</code> split to prospects: <b>direct buyers</b>, <b>ecosystem influencers</b>, <b>implementation partners</b>, <b>regulatory/tender monitors</b>.</li>
 <li>Added high-priority enrichment fields: <code>named_transformation_programmes</code>, <code>procurement_signals</code>, <code>technology_stack_evidence</code>, <code>likely_buyer_personas</code>.</li>
 <li>Validated the AZWA/IZA breakthrough-funding route with official sources:</li>
-</ul>
-<p>- Zorgakkoorden.nl: €800m over 2027-2029; model plans for AI, digital/hybrid care and medtech; application details to follow.</p>
-<p>- Rijksoverheid: CW3.1 framework for AZWA policy choices above €20m.</p>
-<p>- ZN: insurers emphasise transformation plans, waiting lists and need for breakthrough funds.</p>
-<ul>
+<li>Zorgakkoorden.nl: €800m over 2027-2029; model plans for AI, digital/hybrid care and medtech; application details to follow.</li>
+<li>Rijksoverheid: CW3.1 framework for AZWA policy choices above €20m.</li>
+<li>ZN: insurers emphasise transformation plans, waiting lists and need for breakthrough funds.</li>
 <li>Added Sales-People B.V. as an <b>implementation partner</b> hypothesis, not as a health buyer.</li>
 <li>Added HLTH Europe Amsterdam as a June event signal.</li>
 <li>Added NL Health~Holland / Dutch Pavilion qualification route: TFHC confirms 17 April 2026 registration deadline, up to 35 startup booths and 10 kiosks, €5,000 SME booth / €3,000 startup booth excl. VAT, and possible RVO SIB voucher reduction.</li>
@@ -126,6 +124,14 @@
 <li><code>safe_opening_question</code>: one non-confidential discovery question for the first 5 minutes.</li>
 </ul>
 <p>Booking guardrail: if Sales-People cannot fill <code>why_now</code> and <code>workflow_boundary</code>, the meeting should remain tentative/research follow-up rather than consume Truviq technical capacity. This is especially important for ecosystem and pavilion contacts where enthusiasm is not the same as buyer fit.</p>
+<h2>15-minute collector delta — named-stakeholder routing guardrail</h2>
+<p>Do not turn public board/executive names in the lead list into first-call targets by default. Use them only as governance/routing context unless a source proves operational ownership.</p>
+<ul>
+<li><b>Sales-People first ask:</b> “Which team owns the named programme/workflow and who manages implementation or procurement for this route?”</li>
+<li><b>Required CRM field:</b> <code>operational_owner_route</code> with one of: <code>programme_team</code>, <code>procurement_team</code>, <code>implementation_owner</code>, <code>vendor_partner_route</code>, <code>unknown</code>.</li>
+<li><b>Booking guardrail:</b> if only a board/governance name is known and <code>operational_owner_route=unknown</code>, classify as <code>nurture_evidence_gap</code>, not <code>booked_workflow_fit</code>.</li>
+<li><b>Why this matters:</b> it prevents high-status but low-conversion outreach and keeps the campaign meeting-first around workflow owners, not generic executive introductions.</li>
+</ul>
 <h2>Deep-dive addition — Zilveren Kruis digital-triage contracting route</h2>
 <p>Add <b>Zilveren Kruis / digital-triage huisartsenzorg</b> as a payer-driven direct-buyer/route hypothesis for the 10-account pilot. Public sources now verify: Zilveren Kruis’ 2026–2027 Prestatie Digitale Triage uses level 2 digital triage, VECOZO Zorginkoopportaal application, 1 January / 1 July reimbursement starts, a 4-week pre-start application deadline, and a target that at least <b>10% of care questions</b> run through the digital-triage tool. Digizo.nu lists assessed digital-triage/contact/consult-preparation tools and vendors, including Topicus, 24 Health, Quin, MINDD, KLINIK.AI, Bingli, Gezond.nl, PraatmetdeDokter, Medi-Link and Medicinfo.</p>
 <ul>
@@ -133,6 +139,15 @@
 <li><b>Qualification question:</b> “Who owns the workflow for selecting the tool, implementing it across practices, measuring patient uptake/telephone reduction, handling exceptions and proving usage back to the payer?”</li>
 <li><b>Required evidence before booking:</b> named region/practice-group owner or insurer programme route; current triage tool/vendor; manual exception or measurement/reporting pain; target start date; whether budget sits with insurer programme, regional GP organisation, practice group or vendor.</li>
 <li><b>Disqualifier:</b> the digital-triage tool plus HIS/portal and region organisation already covers routing, adoption dashboards, evidence and exception handling; no cross-practice or payer-reporting workflow remains.</li>
+</ul>
+<h2>Deep-synthesis addition — AZWA basisfunctionaliteiten regional chain call track</h2>
+<p>Add <b>AZWA basisfunctionaliteiten / regional chain approaches</b> as a regulatory/funding-route qualification track. Public official sources verify: VNG, Zorgverzekeraars Nederland and VWS are preparing the national framework/criteria, expected Q1 2026; money for these AZWA agreements starts from 2027; 2026 is preparation time; GGD gets a coordinating role for chain approaches linked to health and the knowledge/prevention infrastructure.</p>
+<ul>
+<li><b>Call hook:</b> “AZWA is turning chain approaches such as Valpreventie, Sociaal Verwijzen and Dementie into basisfunctionaliteiten. For Truviq we are validating whether regions still lack workflow control across eligibility, referral, social-domain handoff, completion tracking and evidence/reporting.”</li>
+<li><b>Best first workflow:</b> Valpreventie, because the official page gives four concrete steps for 65+ home-dwelling older people: detect fall risk, screen with Valanalyse, deliver exercise intervention, and actively guide/refer to structural local exercise offers.</li>
+<li><b>Qualification question:</b> “Who owns the regional workflow for eligibility, referral, intervention completion, social-domain handoff and evidence/reporting for Valpreventie/Dementie — and which parts are still tracked manually across organisations?”</li>
+<li><b>Required evidence before booking:</b> regional owner or coalition route; current tools/systems; manual exception or handoff pain; 2027 funding/model-plan clue; reporting/audit obligation.</li>
+<li><b>Disqualifier:</b> policy-only answer, no named regional owner, no cross-system handoff pain, or tooling already handled sufficiently by municipality/GGD/provider systems.</li>
 </ul>
 <h2>Demolish check</h2>
 <ul>
@@ -142,4 +157,5 @@
 <li>NL Health~Holland Pavilion participants may be startups/scaleups seeking visibility, not buyers. Use pavilion participation as a routing clue only when it exposes named provider/payer meetings, implementation projects or partner-led workflows.</li>
 <li>AZWA model plans may standardise solutions in ways that reduce room for bespoke Camunda work; Truviq must position as implementation/governance layer, not a competing application.</li>
 <li>A positive HLTH meeting is not a pipeline opportunity unless it exposes a workflow boundary, exception/audit pain and a named proof-of-value owner.</li>
-</ul><footer><p>Sources and names are public; names are routing/verification contacts unless a source proves buyer status. No patient data. Version 2026-05-26-1905.</p></footer></main></body></html>
+</ul>
+</main></body></html>

@@ -1,6 +1,6 @@
 # HLTH Europe 2026 → First Successful Deal Sprint Plan — lead-qualified update
 
-Updated: 2026-05-26 19:05 UTC
+Updated: 2026-05-26 22:05 UTC
 
 ## What changed
 
@@ -12,6 +12,7 @@ Updated: 2026-05-26 19:05 UTC
 - Added NL Health~Holland / Dutch Pavilion routing map, costs, deadline, ecosystem partners and a concrete Sales-People qualification ask.
 - Added a direct-buyer deep dive on **Zorg bij jou / Santeon hybrid-care cooperative** with 16 connected hospitals, 33,000+ patient-use claim, AVL oncology launch, NEN 7510 signal and call qualification gate.
 - Added a payer/primary-care contracting deep dive on **Zilveren Kruis / digital-triage huisartsenzorg** with 2026–2027 contracting conditions, Digizo.nu tool gate, 10% care-question usage target, VECOZO route, 1 Jan/1 Jul start dates and Sales-People qualification script.
+- Added an **AZWA basisfunctionaliteiten / chain-approach governance** route with Q1 2026 framework timing, 2027 money start, VNG/ZN/VWS owner map, GGD coordination role, fall-prevention workflow steps and Sales-People qualification gate.
 
 ## HLTH Europe logistics and operating targets
 
@@ -67,6 +68,20 @@ Updated: 2026-05-26 19:05 UTC
 - Suggested Truviq offer: 4–6 week “digital front-door operating control” proof-of-value for one region or practice group, focused on request state, exceptions, routing, adoption metrics, call-volume impact, audit/evidence and supplier handoffs — not replacing the triage tool.
 - Disqualifier/demolish check: many practices may solve this inside the triage tool plus HIS/portal and region-organisation support. Disqualify if there is no cross-practice/regional coordination pain, no measurement/audit burden, no exception routing beyond the tool, or no buyer outside normal insurer tariff administration.
 - Sources: https://www.zilverenkruis.nl/zorgaanbieders/zorgsoort/huisartsenzorg/beleid-en-contract/2026-2027/prestatie-digitale-triage ; https://digizo.nu/proces/digitale-triage-consultvoorbereiding/
+
+## Regulatory/funding deep dive — AZWA basisfunctionaliteiten / chain approaches
+
+- Account type: Regulatory/tender monitor / funding-route influencer; potential direct-buyer route through regional coalitions once owners and budgets are named.
+- Why it matters now: official Zorgakkoorden.nl says AZWA develops existing IZA/GALA chain approaches into **basisfunctionaliteiten** for cooperation between care and the social domain. VNG, Zorgverzekeraars Nederland and VWS are working out the national framework and criteria, expected **Q1 2026**.
+- Numbers and timing: some approaches are already basisfunctionalities with structural money, including **Valpreventie** and **Sociaal Verwijzen**; other approaches receive at least **three years of money**, with **Ketenaanpak Dementie** named as an example. AZWA money for these agreements becomes available from **2027**, while **2026** is preparation time for regional parties.
+- Named programme / route: AZWA basisfunctionaliteiten; Valpreventie; Sociaal Verwijzen; Ketenaanpak Dementie; social-basic-infrastructure components such as health/welfare walk-in facilities, local-team strengthening and connection to close neighbourhood networks.
+- Public routing/governance/verification contacts: organisation-level route only — **VNG, Zorgverzekeraars Nederland, VWS** for the national framework; **GGD** for the coordinating role on chain approaches in relation to health and the knowledge/prevention infrastructure. No individual operational buyer is confirmed from these sources.
+- Technology-stack/workflow evidence: Valpreventie is explicitly a four-step chain for **65+ home-dwelling older people** with elevated fall risk: detect fall risk, screen risk factors with Valanalyse, deliver fall-prevention exercise interventions (**In Balans, Otago, Vallen Verleden Tijd**), and actively refer/guide to structural local exercise offers. That implies multi-party eligibility, referral, intervention tracking, provider handoffs and outcome evidence across municipality, care and social domain.
+- Likely buyer personas: regional prevention/chain-approach programme owner; insurer transformation-funding lead; municipality social-domain lead; GGD coordination lead; VVT/primary-care implementation owner; PMO/reporting owner.
+- Sales-People ask: “For AZWA basisfunctionaliteiten, who owns the regional workflow for eligibility, referral, social-domain handoff, intervention completion, outcome evidence and reporting — and is this tracked manually across organisations?”
+- Suggested Truviq offer: 4–6 week **regional chain-workflow control** proof-of-value for one basisfunctionaliteit, preferably Valpreventie or Dementie, focused on referral state, exceptions, accountability, reporting and funding evidence — not replacing municipal, EHR/ECD or GGD systems.
+- Disqualifier/demolish check: this may remain policy/funding coordination rather than software budget; disqualify if Q1 2026 criteria lead to a standard administrative route, if municipalities/GGD already operate sufficient tooling, or if no regional owner will sponsor cross-system workflow visibility.
+- Sources: https://www.zorgakkoorden.nl/actueel/nieuws/azwa-ketenaanpak-doorontwikkelen-tot-basisfunctionaliteit/ ; https://www.zorgakkoorden.nl/programmas/gezond-en-actief-leven-akkoord-gala/ketenaanpak-valpreventie/ ; https://www.zorgakkoorden.nl/programmas/integraal-zorgakkoord/iza-onderdelen/samenwerking-sociaal-domein-huisartsenzorg-en-ggz/
 
 ## Lead plot and qualification
 
@@ -130,6 +145,17 @@ Updated: 2026-05-26 19:05 UTC
 - Next action: Sales-People should test one region/practice-group route: tool used, who owns rollout/adoption measurement, whether exceptions and payer evidence are managed manually, and whether a 4–6 week workflow-control proof-of-value is useful
 - Demolish check: may be solved by the triage tool, HIS/portal and regional support; down-rank if there is no cross-practice coordination, measurement/audit burden or exception routing beyond normal tariff administration
 - Evidence: https://www.zilverenkruis.nl/zorgaanbieders/zorgsoort/huisartsenzorg/beleid-en-contract/2026-2027/prestatie-digitale-triage
+
+### 3d. AZWA basisfunctionaliteiten / regional chain approaches — A- (83/100)
+
+- Account type: Regulatory/tender monitor / funding-route influencer; potential direct-buyer route through regional coalitions once owners and budgets are named
+- Named programme / route: AZWA basisfunctionaliteiten; Valpreventie; Sociaal Verwijzen; Ketenaanpak Dementie; social-basic-infrastructure components such as walk-in health/welfare facilities and strengthened local teams
+- Procurement signal: official Zorgakkoorden.nl says VNG, Zorgverzekeraars Nederland and VWS are working on a national framework and criteria due Q1 2026; money for AZWA agreements becomes available from 2027, while 2026 is preparation time
+- Technology-stack evidence: Valpreventie has four explicit chain steps for 65+ home-dwelling older people: detect risk, screen with Valanalyse, deliver intervention, actively guide/refer to structural local exercise offers
+- Buyer personas / named stakeholder groups: regional prevention/chain-approach owner; insurer transformation-funding lead; municipality social-domain lead; GGD coordination lead; VVT/primary-care implementation owner; reporting/PMO owner
+- Next action: Sales-People should qualify one region around Valpreventie or Dementie: owner, tools, handoffs, manual exception tracking, evidence/reporting burden and 2027 funding route
+- Demolish check: may stay policy/funding administration; down-rank if no regional operational sponsor, no cross-system workflow pain or existing municipal/GGD tooling is sufficient
+- Evidence: https://www.zorgakkoorden.nl/actueel/nieuws/azwa-ketenaanpak-doorontwikkelen-tot-basisfunctionaliteit/
 
 ### 4. VZVZ / Mitz–LSP–ZORG-ID–ZORG-AB ecosystem — A- (84/100)
 
@@ -214,3 +240,5 @@ Only move to proposal when sponsor, process owner, workflow, programme, value me
 ## Named-stakeholder sourcing guardrail
 
 Named people above are public organisation-level stakeholders from official organisation pages where available. They are not automatically the operational buyer. Treat them as routing, governance or validation names; the first Sales-People/Truviq call must still identify the actual programme owner, budget owner and implementation owner.
+
+Collector addition, 2026-05-26 19:14 UTC: add CRM field `operational_owner_route` with values `programme_team`, `procurement_team`, `implementation_owner`, `vendor_partner_route` or `unknown`. If a record has only a public board/governance name and `operational_owner_route=unknown`, Sales-People should classify it as `nurture_evidence_gap` rather than booking a workflow-fit meeting.
