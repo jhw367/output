@@ -1,6 +1,6 @@
 # HLTH Europe 2026 → First Successful Deal Sprint Plan — lead-qualified update
 
-Updated: 2026-05-26 18:09 UTC
+Updated: 2026-05-26 19:05 UTC
 
 ## What changed
 
@@ -11,6 +11,7 @@ Updated: 2026-05-26 18:09 UTC
 - Added HLTH Europe logistics, daily meeting targets, RAI location/contact details and a Sales-People call-to-meeting operating script.
 - Added NL Health~Holland / Dutch Pavilion routing map, costs, deadline, ecosystem partners and a concrete Sales-People qualification ask.
 - Added a direct-buyer deep dive on **Zorg bij jou / Santeon hybrid-care cooperative** with 16 connected hospitals, 33,000+ patient-use claim, AVL oncology launch, NEN 7510 signal and call qualification gate.
+- Added a payer/primary-care contracting deep dive on **Zilveren Kruis / digital-triage huisartsenzorg** with 2026–2027 contracting conditions, Digizo.nu tool gate, 10% care-question usage target, VECOZO route, 1 Jan/1 Jul start dates and Sales-People qualification script.
 
 ## HLTH Europe logistics and operating targets
 
@@ -51,6 +52,21 @@ Updated: 2026-05-26 18:09 UTC
 - Suggested Truviq offer: 4–6 week pathway-onboarding and exception-workflow proof-of-value for one expanding care path (e.g. oncology, hypertension, orthopaedics or maternity), focused on case-state visibility, escalations, audit trail and rollout reporting — not replacing the app/platform.
 - Disqualifier/demolish check: this may already be solved inside the Zorg bij jou platform and service model; Truviq should disqualify if there is no unresolved cross-system workflow, no external integration backlog, no manual exception tracking, or no budget route beyond the incumbent platform/app supplier.
 - Sources: https://www.zorgbijjou.nl/ ; https://www.zorgbijjou.nl/ziekenhuizen ; https://www.zorgbijjou.nl/zorgprofessionals ; https://www.zorgbijjou.nl/artikel/avl-sluit-zich-aan-bij-zorg-bij-jou-en-start-hybride-zorg-voor-patienten-met-kanker ; https://www.zorgbijjou.nl/artikel/zorg-bij-jou-behaalt-nen-7510-certificering
+
+## Direct-buyer deep dive — Zilveren Kruis / digital-triage huisartsenzorg
+
+- Account type: Direct buyer / payer-driven implementation route.
+- Why it matters now: Zilveren Kruis’ official 2026–2027 huisartsenzorg policy page for **Prestatie Digitale Triage** says digital triage can be contracted at level 2, is intended to reduce workload/free staff and keep GP care accessible, and must be embedded via region organisations and approved tools.
+- Named programme / route: Huisartsenzorg 2026–2027 digital-service performance; level 1 online access/contact; level 2 digital triage; regional digital front door; Digizo.nu-assessed triage/contact/consult-preparation process.
+- Numbers and dates: Zilveren Kruis page version 1.2 dated **2 April 2026**; tariffs published no later than **1 September** before the contract year; reimbursement can start **1 January** or **1 July**; application/change request due **4 weeks before** start; target is that at least **10% of care questions** run through the digital-triage tool.
+- Procurement/contracting signal: GP practices apply through the **VECOZO Zorginkoopportaal**; Zilveren Kruis can check practice websites and can request own data proving patient use of services. This is not yet a Truviq procurement signal, but it is a concrete payer-driven workflow and measurement route.
+- Technology-stack evidence: approved digital-triage tool, patient online questionnaire, urgency and follow-up action, consult preparation, online contact/e-consult/portal, GP information system, regional organisation support, monitoring of telephone-contact reduction, data evidence for compliance.
+- Digizo.nu tool gate: Digizo.nu defines digital triage/contact/consult preparation and lists assessed tools/vendors including **Spreekuur.nl / Topicus Zorg**, **Platform24 / 24 Health**, **ZorgvraagHulp powered by Quin**, **Moet ik naar de dokter? / MINDD**, **Klinik AI & Access**, **Bingli**, **Gezond.nl**, **PraatmetdeDokter**, **Sendi / Medi-Link**, and **Medicoo/Dokterswacht app/HCWB Huisartsenzorg / Medicinfo** with status “Toetsing afgerond”.
+- Likely buyer personas: insurer huisartsenzorg contracting/digital-care programme owner; regional GP organisation digital-front-door lead; GP-practice implementation lead; triage-tool vendor partner manager; data/reporting owner; primary-care operations lead.
+- Sales-People ask: “Zilveren Kruis uses the 2026–2027 digital-triage performance and 10% usage target. Who owns the workflow for tool selection, regional rollout, patient adoption, telephone-contact reduction measurement and evidence back to the payer?”
+- Suggested Truviq offer: 4–6 week “digital front-door operating control” proof-of-value for one region or practice group, focused on request state, exceptions, routing, adoption metrics, call-volume impact, audit/evidence and supplier handoffs — not replacing the triage tool.
+- Disqualifier/demolish check: many practices may solve this inside the triage tool plus HIS/portal and region-organisation support. Disqualify if there is no cross-practice/regional coordination pain, no measurement/audit burden, no exception routing beyond the tool, or no buyer outside normal insurer tariff administration.
+- Sources: https://www.zilverenkruis.nl/zorgaanbieders/zorgsoort/huisartsenzorg/beleid-en-contract/2026-2027/prestatie-digitale-triage ; https://digizo.nu/proces/digitale-triage-consultvoorbereiding/
 
 ## Lead plot and qualification
 
@@ -103,6 +119,17 @@ Updated: 2026-05-26 18:09 UTC
 - Next action: Sales-People/Truviq should test one pathway-onboarding pain: owner, current platform/app supplier, manual exception tracking, security/audit reporting and expansion timing
 - Demolish check: May be fully solved inside existing Zorg bij jou platform/service model; disqualify if no unresolved cross-system workflow or budget route beyond incumbent tooling.
 - Evidence: https://www.zorgbijjou.nl/zorgprofessionals
+
+### 3c. Zilveren Kruis / digital-triage huisartsenzorg route — A- (84/100)
+
+- Account type: Direct buyer / payer-driven implementation route
+- Named programme / route: Zilveren Kruis Huisartsenzorg 2026–2027 Prestatie Digitale Triage; Digizo.nu digital-triage/contact/consult-preparation process; regional digital front-door implementation
+- Procurement signal: Official Zilveren Kruis policy gives VECOZO application route, 1 Jan/1 Jul start dates, 4-week application deadline and at least 10% care-question usage target; no open Truviq procurement found yet
+- Technology-stack evidence: digital triage tool, patient questionnaire, urgency/follow-up routing, online contact/e-consult/portal, GP information system, regional organisation support, usage and telephone-contact reduction metrics, payer evidence checks
+- Buyer personas / named stakeholder groups: insurer huisartsenzorg contracting/digital-care owner; regional GP organisation digital-front-door lead; practice implementation lead; triage-tool vendor partner manager; data/reporting owner
+- Next action: Sales-People should test one region/practice-group route: tool used, who owns rollout/adoption measurement, whether exceptions and payer evidence are managed manually, and whether a 4–6 week workflow-control proof-of-value is useful
+- Demolish check: may be solved by the triage tool, HIS/portal and regional support; down-rank if there is no cross-practice coordination, measurement/audit burden or exception routing beyond normal tariff administration
+- Evidence: https://www.zilverenkruis.nl/zorgaanbieders/zorgsoort/huisartsenzorg/beleid-en-contract/2026-2027/prestatie-digitale-triage
 
 ### 4. VZVZ / Mitz–LSP–ZORG-ID–ZORG-AB ecosystem — A- (84/100)
 
