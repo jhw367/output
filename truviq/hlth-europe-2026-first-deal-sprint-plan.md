@@ -1,6 +1,6 @@
 # HLTH Europe 2026 → First Successful Deal Sprint Plan — lead-qualified update
 
-Updated: 2026-05-26 16:19 UTC
+Updated: 2026-05-26 17:01 UTC
 
 ## What changed
 
@@ -9,6 +9,7 @@ Updated: 2026-05-26 16:19 UTC
 - Added named programmes/routes, procurement signals, technology-stack evidence, buyer personas and stakeholder interests.
 - Added demolish checks and CRM-ready next actions.
 - Added HLTH Europe logistics, daily meeting targets, RAI location/contact details and a Sales-People call-to-meeting operating script.
+- Added NL Health~Holland / Dutch Pavilion routing map, costs, deadline, ecosystem partners and a concrete Sales-People qualification ask.
 
 ## HLTH Europe logistics and operating targets
 
@@ -22,6 +23,19 @@ Updated: 2026-05-26 16:19 UTC
 - Required output per call: confirmed owner or routed name; programme/workflow; current platform/supplier; timing/procurement clue; HLTH attendance; meeting status; disqualifier.
 - Demolish check: HLTH may skew toward vendors, pharma, investors and innovation teams rather than Dutch operational budget owners. If accepted meetings are mostly innovation scouts, Truviq should down-rank them unless they can name the process owner and budget/procurement route.
 - Sources: https://hlth.com/events/europe and https://www.rai.nl/en/contact
+
+## Dutch Pavilion routing map — Sales-People target enrichment
+
+- Official pavilion route: TFHC page for **Amsterdam | HLTH Europe 2026** says the NL Health~Holland Pavilion is for Dutch health tech companies; registration deadline is **17 April 2026**; dates are **15–18 June 2026**; location is **RAI Amsterdam**.
+- Pavilion scale: TFHC states the 2026 pavilion expects **up to 35 startup booths and 10 kiosks**, with a central meeting area and networking activities/events in the pavilion.
+- Participation economics: TFHC lists an **SME booth at €5,000 excl. VAT** and a **startup booth at €3,000 excl. VAT**; each includes two staff tickets and listing on the HLTH website/event platform. TFHC also points to an RVO SIB voucher that can reduce the kiosk to **€2,500 excl. VAT** and startup booth to **€1,500 excl. VAT**, conditional on eligibility/grant availability.
+- Eligibility clue: startup booth criteria include companies **less than 5 years incorporated** and **under €5m raised**; useful to separate startups/scaleups from mature vendor or direct-buyer outreach.
+- Ecosystem partners publicly named across TFHC / I amsterdam / sector pages: **Health~Holland, Amsterdam Trade & Invest, RVO, InnovationQuarter, LIOF, BOM, RAI Amsterdam, HLTH Inc.**; I amsterdam says the 2025 Dutch Pavilion had **up to 27 startup booths and 11 kiosks**.
+- Sales-People ask: call pavilion-route records with one concrete question: “Are you exhibiting/attending through the NL Health~Holland Pavilion, and can you name the provider/payer/programme owner you want to meet around [AZWA/identity/PZP/acute workflow]?”
+- Qualification scoring impact: +8 points if a record has confirmed HLTH attendance plus a named provider/payer target; −10 if the only goal is generic international visibility; −15 if no workflow owner, no buyer type and no post-event follow-up path.
+- Outreach angle: position Truviq as the partner that converts pavilion traffic into **workflow-fit discovery meetings** and a **4–6 week proof-of-value** tied to compliance, cross-system exceptions or implementation reporting.
+- Demolish check: pavilion exhibitors are often startups/scaleups seeking exposure, not operational buyers. Treat the pavilion as a routing and intelligence source, not a buyer list, unless it reveals named provider/payer meetings, implementation projects or partner-led workflows.
+- Sources: https://tfhc.nl/event/hlth2026officialregistration/ ; https://www.health-holland.com/events/2026/06/hlth-europe-join-nl-health-holland-pavilion ; https://www.iamsterdam.com/en/business/calendar/events/all/hlth-europe-2026 ; https://liof.nl/en/events/hlth-europe-2026-dutch-paviljoen
 
 ## Lead plot and qualification
 
@@ -91,12 +105,12 @@ Updated: 2026-05-26 16:19 UTC
 ### 6. Sales-People B.V. — B+ (80/100)
 
 - Account type: Implementation partner
-- Named programme / route: HLTH Europe Amsterdam 15–18 June 2026 campaign support; lead qualification and appointment setting
-- Procurement signal: Positions around B2B phone lead generation, appointment setting, lead follow-up and relationship management
-- Technology-stack evidence: Human calling + Truviq account list/CRM + calendar + call notes + opt-out logging
-- Buyer personas / named stakeholder groups: Sales-People account/campaign lead; Truviq commercial lead; event campaign owner; sales operations/CRM owner
-- Stakeholder interests: Truviq: meetings and intelligence; Sales-People: campaign delivery; prospects: relevant factual call, no technical overclaim
-- Next action: Run 10-account pilot on ranked A/A- accounts before HLTH; require notes on programme, stack, owner, procurement route
+- Named programme / route: HLTH Europe Amsterdam 15–18 June 2026 campaign support; NL Health~Holland Pavilion qualification; lead qualification and appointment setting
+- Procurement signal: Positions around B2B phone lead generation, appointment setting, lead follow-up and relationship management; TFHC pavilion registration deadline 17 April 2026 creates a timed list-building trigger
+- Technology-stack evidence: Human calling + Truviq account list/CRM + calendar + call notes + opt-out logging; pavilion attendance/exhibitor status as a CRM field
+- Buyer personas / named stakeholder groups: Sales-People account/campaign lead; Truviq commercial lead; event campaign owner; sales operations/CRM owner; pavilion partner-route contacts at TFHC/Health~Holland/RVO/regional agencies
+- Stakeholder interests: Truviq: meetings and intelligence; Sales-People: campaign delivery; prospects: relevant factual call, no technical overclaim; pavilion partners: high-quality Dutch health-tech presence
+- Next action: Run 10-account pilot on ranked A/A- accounts before HLTH; add pavilion status, desired provider/payer meeting and post-event proof-of-value route to every call note
 - Demolish check: May not have specialist health credibility; use for access/qualification, not solution selling.
 - Evidence: https://www.sales-people.nl/
 
@@ -132,7 +146,7 @@ Top-15 selection now starts with the eight plotted leads above. No account is ca
 
 ### Sprint 4 — Sales-People pilot
 
-Use Sales-People for access and qualification only. Pilot: 10 records, starting with the ranked A/A-/B+ leads above. Required note fields: named contact, role, programme, stack, confirmed/denied pain, procurement route, event attendance, meeting accepted/declined/nurture, next action and disqualifier.
+Use Sales-People for access and qualification only. Pilot: 10 records, starting with the ranked A/A-/B+ leads above. Required note fields: named contact, role, programme, stack, confirmed/denied pain, procurement route, event attendance, pavilion route, desired provider/payer meeting, meeting accepted/declined/nurture, next action and disqualifier.
 
 ### Sprint 7 — HLTH execution
 
