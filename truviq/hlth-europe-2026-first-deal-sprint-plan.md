@@ -1,6 +1,6 @@
 # HLTH Europe 2026 → First Successful Deal Sprint Plan — lead-qualified update
 
-Updated: 2026-05-26 17:01 UTC
+Updated: 2026-05-26 18:09 UTC
 
 ## What changed
 
@@ -10,6 +10,7 @@ Updated: 2026-05-26 17:01 UTC
 - Added demolish checks and CRM-ready next actions.
 - Added HLTH Europe logistics, daily meeting targets, RAI location/contact details and a Sales-People call-to-meeting operating script.
 - Added NL Health~Holland / Dutch Pavilion routing map, costs, deadline, ecosystem partners and a concrete Sales-People qualification ask.
+- Added a direct-buyer deep dive on **Zorg bij jou / Santeon hybrid-care cooperative** with 16 connected hospitals, 33,000+ patient-use claim, AVL oncology launch, NEN 7510 signal and call qualification gate.
 
 ## HLTH Europe logistics and operating targets
 
@@ -36,6 +37,20 @@ Updated: 2026-05-26 17:01 UTC
 - Outreach angle: position Truviq as the partner that converts pavilion traffic into **workflow-fit discovery meetings** and a **4–6 week proof-of-value** tied to compliance, cross-system exceptions or implementation reporting.
 - Demolish check: pavilion exhibitors are often startups/scaleups seeking exposure, not operational buyers. Treat the pavilion as a routing and intelligence source, not a buyer list, unless it reveals named provider/payer meetings, implementation projects or partner-led workflows.
 - Sources: https://tfhc.nl/event/hlth2026officialregistration/ ; https://www.health-holland.com/events/2026/06/hlth-europe-join-nl-health-holland-pavilion ; https://www.iamsterdam.com/en/business/calendar/events/all/hlth-europe-2026 ; https://liof.nl/en/events/hlth-europe-2026-dutch-paviljoen
+
+## Direct-buyer deep dive — Zorg bij jou / Santeon hybrid-care cooperative
+
+- Account type: Direct buyer / implementation partner route.
+- Why it matters now: Zorg bij jou’s public patient site says **more than 33,000 patients** use Zorg bij jou; its connected-hospitals page says Zorg bij jou is available in **16 hospitals**; the professional page positions it as an **open platform** for hybrid care at national scale.
+- Named programme / route: hybrid care services, medical service centre, connected-hospital rollout, care-pathway expansion, and NEN 7510 information-security continuous improvement.
+- New programme signal: Zorg bij jou announced AVL joined the cooperative and started a hybrid care pathway for patients undergoing minimally invasive bowel-cancer surgery; the article says AVL wants to expand the collaboration and join medical boards for joint pathway development.
+- Technology-stack evidence: patient apps, questionnaires/home measurements, devices such as blood-pressure or saturation meters where needed, remote monitoring by a medical team, handoff back to the patient’s own treating provider, information-security and incident/process controls under NEN 7510.
+- Public routing/governance/verification contacts: Siebren van der Kooij is named publicly as director of Zorg bij jou in the NEN 7510 article; the AVL launch article names Anne den Hartog and Tjerk Maas as interviewees around the AVL hybrid-care launch. Treat these as routing/verification names only; the actual budget owner and implementation owner still need discovery.
+- Likely buyer personas: Zorg bij jou platform/service operations lead; hospital hybrid-care programme owner; medical service centre operations lead; connected-hospital pathway owner; CISO/privacy officer; Santeon/connected-hospital governance route.
+- Sales-People ask: “Which new hospital or care pathway is most painful to onboard into Zorg bij jou, and who owns the workflow between patient app, medical service centre, treating team, security controls and outcome reporting?”
+- Suggested Truviq offer: 4–6 week pathway-onboarding and exception-workflow proof-of-value for one expanding care path (e.g. oncology, hypertension, orthopaedics or maternity), focused on case-state visibility, escalations, audit trail and rollout reporting — not replacing the app/platform.
+- Disqualifier/demolish check: this may already be solved inside the Zorg bij jou platform and service model; Truviq should disqualify if there is no unresolved cross-system workflow, no external integration backlog, no manual exception tracking, or no budget route beyond the incumbent platform/app supplier.
+- Sources: https://www.zorgbijjou.nl/ ; https://www.zorgbijjou.nl/ziekenhuizen ; https://www.zorgbijjou.nl/zorgprofessionals ; https://www.zorgbijjou.nl/artikel/avl-sluit-zich-aan-bij-zorg-bij-jou-en-start-hybride-zorg-voor-patienten-met-kanker ; https://www.zorgbijjou.nl/artikel/zorg-bij-jou-behaalt-nen-7510-certificering
 
 ## Lead plot and qualification
 
@@ -76,6 +91,18 @@ Updated: 2026-05-26 17:01 UTC
 - Next action: Map 2 regions with active HAP/RAV digital referral pilots; seek intro via Nictiz/acute-care network
 - Demolish check: May be too standards/vendor-led; Truviq needs process gap beyond message exchange.
 - Evidence: https://www.nictiz.nl/nieuws/betere-acute-zorg-digitale-ambulanceverwijzing-huisartsenspoedpost/
+
+### 3b. Zorg bij jou / Santeon hybrid-care cooperative — A (85/100)
+
+- Account type: Direct buyer / implementation partner route
+- Named programme / route: Zorg bij jou hybrid-care platform; medical service centre; connected-hospital and care-pathway rollout; AVL oncology hybrid pathway; NEN 7510 continuous improvement
+- Procurement signal: Active scaling evidence from 16 connected hospitals, 33,000+ patient-use claim and AVL launch; public tender/budget route not yet found
+- Technology-stack evidence: Patient apps/questionnaires/home measurements, remote monitoring by medical team, devices where needed, handoff to treating provider, information-security processes and incident/process controls
+- Buyer personas / named stakeholder groups: Platform/service operations lead; hospital hybrid-care programme owner; medical service centre operations lead; CISO/privacy officer; connected-hospital pathway owner
+- Public named stakeholders to route/verify: Siebren van der Kooij (director Zorg bij jou, named in NEN 7510 article); Anne den Hartog and Tjerk Maas (AVL launch interviewees around hybrid oncology pathway). Treat as routing/verification contacts only, not confirmed buyer/budget owner.
+- Next action: Sales-People/Truviq should test one pathway-onboarding pain: owner, current platform/app supplier, manual exception tracking, security/audit reporting and expansion timing
+- Demolish check: May be fully solved inside existing Zorg bij jou platform/service model; disqualify if no unresolved cross-system workflow or budget route beyond incumbent tooling.
+- Evidence: https://www.zorgbijjou.nl/zorgprofessionals
 
 ### 4. VZVZ / Mitz–LSP–ZORG-ID–ZORG-AB ecosystem — A- (84/100)
 
@@ -142,7 +169,7 @@ Updated: 2026-05-26 17:01 UTC
 
 ### Sprint 2 — ICP, account list and evidence
 
-Top-15 selection now starts with the eight plotted leads above. No account is caller-ready until it has: programme, procurement signal, technology-stack evidence, likely buyer persona, stakeholder-interest hypothesis, disqualifier and next action.
+Top-15 selection now starts with the nine plotted leads above. No account is caller-ready until it has: programme, procurement signal, technology-stack evidence, likely buyer persona, stakeholder-interest hypothesis, disqualifier and next action.
 
 ### Sprint 4 — Sales-People pilot
 
