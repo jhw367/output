@@ -1,6 +1,6 @@
 # HLTH Europe 2026 → First Successful Deal Sprint Plan — lead-qualified update
 
-Updated: 2026-05-26 22:05 UTC
+Updated: 2026-05-26 23:04 UTC
 
 ## What changed
 
@@ -13,6 +13,7 @@ Updated: 2026-05-26 22:05 UTC
 - Added a direct-buyer deep dive on **Zorg bij jou / Santeon hybrid-care cooperative** with 16 connected hospitals, 33,000+ patient-use claim, AVL oncology launch, NEN 7510 signal and call qualification gate.
 - Added a payer/primary-care contracting deep dive on **Zilveren Kruis / digital-triage huisartsenzorg** with 2026–2027 contracting conditions, Digizo.nu tool gate, 10% care-question usage target, VECOZO route, 1 Jan/1 Jul start dates and Sales-People qualification script.
 - Added an **AZWA basisfunctionaliteiten / chain-approach governance** route with Q1 2026 framework timing, 2027 money start, VNG/ZN/VWS owner map, GGD coordination role, fall-prevention workflow steps and Sales-People qualification gate.
+- Deepened **Zorg bij jou / Santeon** from scale signal to funded transformation route: official Santeon page verifies **€77m IZA transformation money** from VGZ, Zilveren Kruis and VWS, paid in tranches based on achieved results; Santeon also publishes a public Statement of Work and Zorg bij jou evaluation page.
 
 ## HLTH Europe logistics and operating targets
 
@@ -46,13 +47,16 @@ Updated: 2026-05-26 22:05 UTC
 - Why it matters now: Zorg bij jou’s public patient site says **more than 33,000 patients** use Zorg bij jou; its connected-hospitals page says Zorg bij jou is available in **16 hospitals**; the professional page positions it as an **open platform** for hybrid care at national scale.
 - Named programme / route: hybrid care services, medical service centre, connected-hospital rollout, care-pathway expansion, and NEN 7510 information-security continuous improvement.
 - New programme signal: Zorg bij jou announced AVL joined the cooperative and started a hybrid care pathway for patients undergoing minimally invasive bowel-cancer surgery; the article says AVL wants to expand the collaboration and join medical boards for joint pathway development.
-- Technology-stack evidence: patient apps, questionnaires/home measurements, devices such as blood-pressure or saturation meters where needed, remote monitoring by a medical team, handoff back to the patient’s own treating provider, information-security and incident/process controls under NEN 7510.
+- Funding/procurement signal: Santeon’s official October 2023 article says the seven Santeon hospitals received agreement from **Coöperatie VGZ, Zilveren Kruis and VWS** for the Zorg bij jou transformation plan and **€77m IZA transformation money**, paid **in tranches based on achieved results**. This makes Zorg bij jou more concrete than a generic hybrid-care prospect: there is a known transformation plan, payer/VWS route and result-based funding logic.
+- Statement/evaluation evidence: Santeon publishes a public **Statement of Work — Zorg bij jou** PDF and a Zorg bij jou evaluation page. The evaluation page says Santeon evaluates effects per condition on care outcomes, care activities, patient/professional satisfaction, degree of hybrid-care use by professionals and patient use; this gives Truviq a measurable proof-of-value frame.
+- 2026 scaling/change signal: Santeon’s “Samen de zorg vernieuwen” platform is positioned as a structured approach for renewing care pathways so care stays accessible, affordable and high-quality; use it as evidence that Zorg bij jou is part of pathway redesign/change adoption, not only app deployment.
+- Technology-stack evidence: patient apps, questionnaires/home measurements, devices such as blood-pressure or saturation meters where needed, remote monitoring by a medical team, handoff back to the patient’s own treating provider, information-security and incident/process controls under NEN 7510, evaluation/reporting loops per condition, and result-based transformation-funding milestones.
 - Public routing/governance/verification contacts: Siebren van der Kooij is named publicly as director of Zorg bij jou in the NEN 7510 article; the AVL launch article names Anne den Hartog and Tjerk Maas as interviewees around the AVL hybrid-care launch. Treat these as routing/verification names only; the actual budget owner and implementation owner still need discovery.
-- Likely buyer personas: Zorg bij jou platform/service operations lead; hospital hybrid-care programme owner; medical service centre operations lead; connected-hospital pathway owner; CISO/privacy officer; Santeon/connected-hospital governance route.
-- Sales-People ask: “Which new hospital or care pathway is most painful to onboard into Zorg bij jou, and who owns the workflow between patient app, medical service centre, treating team, security controls and outcome reporting?”
-- Suggested Truviq offer: 4–6 week pathway-onboarding and exception-workflow proof-of-value for one expanding care path (e.g. oncology, hypertension, orthopaedics or maternity), focused on case-state visibility, escalations, audit trail and rollout reporting — not replacing the app/platform.
-- Disqualifier/demolish check: this may already be solved inside the Zorg bij jou platform and service model; Truviq should disqualify if there is no unresolved cross-system workflow, no external integration backlog, no manual exception tracking, or no budget route beyond the incumbent platform/app supplier.
-- Sources: https://www.zorgbijjou.nl/ ; https://www.zorgbijjou.nl/ziekenhuizen ; https://www.zorgbijjou.nl/zorgprofessionals ; https://www.zorgbijjou.nl/artikel/avl-sluit-zich-aan-bij-zorg-bij-jou-en-start-hybride-zorg-voor-patienten-met-kanker ; https://www.zorgbijjou.nl/artikel/zorg-bij-jou-behaalt-nen-7510-certificering
+- Likely buyer personas: Zorg bij jou platform/service operations lead; Santeon transformation-plan/evaluation owner; hospital hybrid-care programme owner; medical service centre operations lead; connected-hospital pathway owner; payer transformation-funding monitor; CISO/privacy officer; Santeon/connected-hospital governance route.
+- Sales-People ask: “The public Santeon route mentions €77m IZA transformation funding paid in tranches on achieved results. Which result/workflow is hardest to prove or operationalise now: new pathway onboarding, medical service centre exceptions, treating-team handoff, patient adoption, or evaluation/reporting per condition?”
+- Suggested Truviq offer: 4–6 week pathway-onboarding and result-evidence proof-of-value for one expanding care path (e.g. oncology, hypertension, orthopaedics or maternity), focused on case-state visibility, escalations, audit trail, milestone evidence and rollout reporting — not replacing the app/platform.
+- Disqualifier/demolish check: the €77m funding may already be committed to the existing Zorg bij jou platform/service and Santeon programme; Truviq should disqualify if tranche reporting is already solved, there is no unresolved cross-system workflow, no external integration backlog, no manual exception tracking, or no budget route beyond incumbent app/platform and programme partners.
+- Sources: https://www.zorgbijjou.nl/ ; https://www.zorgbijjou.nl/ziekenhuizen ; https://www.zorgbijjou.nl/zorgprofessionals ; https://www.zorgbijjou.nl/artikel/avl-sluit-zich-aan-bij-zorg-bij-jou-en-start-hybride-zorg-voor-patienten-met-kanker ; https://www.zorgbijjou.nl/artikel/zorg-bij-jou-behaalt-nen-7510-certificering ; https://santeon.nl/2023/10/18/akkoord-zorgverzekeraars/ ; https://santeon.nl/project/zorg-bij-jou/ ; https://santeon.nl/statement-of-work-zorg-bij-jou-augustus-2023-publieksversie/ ; https://santeon.nl/onderzoek-en-innovatie/onderzoeksagenda-copy-copy-copy/ ; https://santeon.nl/2026/03/09/ken-jij-samendezorgvernieuwen-nl-al/
 
 ## Direct-buyer deep dive — Zilveren Kruis / digital-triage huisartsenzorg
 
@@ -123,17 +127,17 @@ Updated: 2026-05-26 22:05 UTC
 - Demolish check: May be too standards/vendor-led; Truviq needs process gap beyond message exchange.
 - Evidence: https://www.nictiz.nl/nieuws/betere-acute-zorg-digitale-ambulanceverwijzing-huisartsenspoedpost/
 
-### 3b. Zorg bij jou / Santeon hybrid-care cooperative — A (85/100)
+### 3b. Zorg bij jou / Santeon hybrid-care cooperative — A (87/100)
 
 - Account type: Direct buyer / implementation partner route
 - Named programme / route: Zorg bij jou hybrid-care platform; medical service centre; connected-hospital and care-pathway rollout; AVL oncology hybrid pathway; NEN 7510 continuous improvement
-- Procurement signal: Active scaling evidence from 16 connected hospitals, 33,000+ patient-use claim and AVL launch; public tender/budget route not yet found
-- Technology-stack evidence: Patient apps/questionnaires/home measurements, remote monitoring by medical team, devices where needed, handoff to treating provider, information-security processes and incident/process controls
-- Buyer personas / named stakeholder groups: Platform/service operations lead; hospital hybrid-care programme owner; medical service centre operations lead; CISO/privacy officer; connected-hospital pathway owner
+- Procurement signal: Active scaling evidence from 16 connected hospitals, 33,000+ patient-use claim and AVL launch; official Santeon article verifies €77m IZA transformation money agreed by VGZ, Zilveren Kruis and VWS, paid in tranches based on achieved results; public Statement of Work and evaluation page create measurable result/evidence hooks
+- Technology-stack evidence: Patient apps/questionnaires/home measurements, remote monitoring by medical team, devices where needed, handoff to treating provider, information-security processes and incident/process controls, evaluation/reporting per condition, result-based funding milestones
+- Buyer personas / named stakeholder groups: Platform/service operations lead; Santeon transformation-plan/evaluation owner; hospital hybrid-care programme owner; medical service centre operations lead; CISO/privacy officer; connected-hospital pathway owner; payer transformation-funding monitor
 - Public named stakeholders to route/verify: Siebren van der Kooij (director Zorg bij jou, named in NEN 7510 article); Anne den Hartog and Tjerk Maas (AVL launch interviewees around hybrid oncology pathway). Treat as routing/verification contacts only, not confirmed buyer/budget owner.
-- Next action: Sales-People/Truviq should test one pathway-onboarding pain: owner, current platform/app supplier, manual exception tracking, security/audit reporting and expansion timing
-- Demolish check: May be fully solved inside existing Zorg bij jou platform/service model; disqualify if no unresolved cross-system workflow or budget route beyond incumbent tooling.
-- Evidence: https://www.zorgbijjou.nl/zorgprofessionals
+- Next action: Sales-People/Truviq should test one funded-result workflow: owner, current platform/app supplier, manual exception tracking, evaluation/tranche evidence burden, payer/VWS reporting route and expansion timing
+- Demolish check: May be fully solved inside existing Zorg bij jou platform/service model and already-funded Santeon programme; disqualify if tranche/evaluation reporting is solved, no unresolved cross-system workflow exists, or no budget route exists beyond incumbent tooling.
+- Evidence: https://santeon.nl/2023/10/18/akkoord-zorgverzekeraars/
 
 ### 3c. Zilveren Kruis / digital-triage huisartsenzorg route — A- (84/100)
 
