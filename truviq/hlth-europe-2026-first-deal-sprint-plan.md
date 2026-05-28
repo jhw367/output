@@ -246,3 +246,38 @@ Only move to proposal when sponsor, process owner, workflow, programme, value me
 Named people above are public organisation-level stakeholders from official organisation pages where available. They are not automatically the operational buyer. Treat them as routing, governance or validation names; the first Sales-People/Truviq call must still identify the actual programme owner, budget owner and implementation owner.
 
 Collector addition, 2026-05-26 19:14 UTC: add CRM field `operational_owner_route` with values `programme_team`, `procurement_team`, `implementation_owner`, `vendor_partner_route` or `unknown`. If a record has only a public board/governance name and `operational_owner_route=unknown`, Sales-People should classify it as `nurture_evidence_gap` rather than booking a workflow-fit meeting.
+
+## Deep-synthesis additions — 2026-05-28 hourly run
+
+### AZWA programme governance — Zorgakkoorden.nl archive signal
+
+- **Critical programme signal (2026-05-28):** The official IZA/AZWA knowledge site at zorgakkoorden.nl is being archived today. Most news article sub-pages return 404; the main AZWA programme overview page remains accessible. Evidence already captured in this plan is not invalidated; the IZA/AZWA programme continues. However, future monitoring of AZWA/IZA news should shift to: rijksoverheid.nl/VWS, vng.nl, zn.nl, zorginstituutnederland.nl and sector media (Zorgvisie, Skipr, Medisch Contact).
+- **BO IZA-AZWA 30 March 2026 confirmed:** BO decided to invest AZWA doorbraakmiddelen (€800m, 2027–2029) in opschaling of labour-saving AI, digital/hybrid care and medical technology. Regional werkagenda guidance published. Vliegende brigade (Zorginstituut Nederland + VWS) created to rescue stalled IZA/AZWA transformation plans.
+- **Vliegende brigade — Truviq angle:** If Sales-People discover a prospect's transformation plan was labelled "gestrand" (stalled), this may increase urgency for an implementation/orchestration layer, not reduce it. Flag in CRM as `transformation_plan_stalled: true` if sourced.
+- **Source confirmed (AZWA programme overview, accessible 2026-05-28):** https://www.zorgakkoorden.nl/programmas/aanvullend-zorg-en-welzijnsakkoord/
+
+### KIK-V VVT data-sharing — government confirmation
+
+- **VWS letter May 2026 confirms:** investing in KIK-V (Keteninformatie Kerngegevens Verbeteren) for VVT data exchange remains worthwhile. VVT providers implementing KIK-V now have formal government backing.
+- **Truviq angle:** KIK-V implementation for VVT providers creates workflow coordination demand across the chain (referral, medication, care-plan handoffs, consent, reporting). Strongest combination route: KIK-V + Nuts-LSP medication data (TRU-HL-20B840) + IZA/AZWA elderly-care transformation.
+- **Sales-People enrichment for TRU-HL-20B840:** "Is your KIK-V and/or Nuts-LSP implementation creating manual workflow gaps around referral intake, care assignments, medication handoffs, exception routing, consent or cross-partner reporting — or is it handled end-to-end by a vendor/platform?"
+- **Source:** Zorgakkoorden.nl news listing (KIK-V headline confirmed 2026-05-28, article URL archived); cross-reference KIK-V programme at zorginzicht.nl.
+
+### IJsselheem official source enrichment
+
+- **Organisation confirmed via official website** (https://www.ijsselheem.nl/): VVT/ouderenzorg provider; Zorgkaart Nederland rating 8.2 (471 ratings); cliëntportaal; locaties; zorgdiensten; contact 088 339 44 00 / info@ijsselheem.nl.
+- **Technology/digitalisation signals from public stories:** (1) Active staff onboarding app in production — story by Jolande (helpende) and Thea (recruiter) confirmed on verhalen page; (2) "De inzet van zorgtechnologie helpt bij ons open deuren beleid" (Heleen van der Steege) confirms active zorgtechnologie deployment; (3) Signed research collaboration with Universiteit Maastricht / Prof. dr. Hilde Verbeek (quality/care research route).
+- **Account-type upgrade:** IJsselheem moves from "sector-media hypothesis" to "direct buyer with official source confirmation."
+- **Enriched call hook:** "We saw IJsselheem is rolling out a staff onboarding app and deploying care technology across locations. For Truviq we are validating whether onboarding, credentialing, location handoffs, care assignment and reporting workflows still create exceptions or manual work across ECD, HR/planning and the portal."
+- **Enriched buyer personas:** onboarding/HR-tech programme owner; zorgtechnologie lead; CNIO (ICT&health article source); COO/CIO; care-ops manager.
+- **Public routing names only:** Heleen van der Steege (zorgtechnologie), Jolande + Thea (onboarding app users), Prof. dr. Hilde Verbeek (UM collaboration). Not confirmed operational buyers.
+- **Demolish:** Stories are public-facing narrative; they confirm digital intent, not unresolved workflow pain or IT budget. Disqualify if onboarding app and zorgtechnologie are vendor-managed end-to-end with no cross-system exception backlog.
+- **Source:** https://www.ijsselheem.nl/verhalen/ (confirmed 2026-05-28)
+
+### PZP record consolidation
+
+- Keep the two PZP records (PROVES route + Nictiz consultation route) as one outreach cluster until a call or official source reveals distinct buyer/implementation routes.
+- Primary routing: PROVES Connectathon → functional PoC → multi-infrastructure (AORTA-LSP + Nuts) → vendor/provider implementation.
+- Secondary routing: Nictiz PZP standard consultation → EHR/ECD vendor implementation.
+- Sales-People: one call note per PZP target; use `pzp_route` field (values: `proves_connectathon`, `nictiz_consultation`, `provider_implementation`, `vendor_route`, `unknown`). Do not call two separate PZP tracks into the same ecosystem contact.
+- Merge trigger: deep-job merges the two records when a named provider/region implementation project distinguishes the routes.
