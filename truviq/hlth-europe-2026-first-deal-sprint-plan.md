@@ -367,3 +367,37 @@ Prioritised by account fit + HLTH likely presence + named workflow hypothesis. C
 - The "1 in 3 C-suite" claim covers all geographies and industries; NL-specific operational buyer attendance is unverified.
 - NL health operational buyers (hospital COOs, insurer contracting leads, VWS programme owners) tend to attend NL-native events (ICT&health, Skipr, VWS-organised sessions) more than international innovation events.
 - Disconfirming signal: if the first 3 pre-event outreach rounds yield fewer than 2 confirmed HLTH attendances among top-5 accounts, shift energy to the 24 June TFHC Partner Event and 2 July Health Holland session as alternative meeting windows.
+
+---
+
+## HLTH Europe 2026 — Truviq sponsor and NL routing update (2026-06-05)
+
+### What changed
+
+- **Truviq Systems BV is now listed on the official HLTH Europe 2026 sponsors page.** This changes HLTH from a generic event/pavilion-routing hypothesis into a Truviq-owned campaign surface: outreach can reference Truviq’s official sponsor presence rather than only asking whether prospects attend HLTH.
+- **Official HLTH speaker data confirms named NL-relevant routing targets:** Hans van Goudoever (CEO, Amsterdam UMC), Bart Scheerder (AI Strategy Lead, University Medical Center Groningen), Derya Yakar (Professor and Chair of Radiology, University Medical Center Groningen), Bente Jorritsma (Vice-Chair of the Executive Board, DICA IKNL), Herko Coomans (Head of International Digital Health, Ministerie van Volksgezondheid, Welzijn), and Aida Demneri (Partner, Health Sector Lead, Netherlands, Deloitte).
+- **Official audience positioning still supports the meeting thesis** — HLTH says its ecosystem includes Health Systems & Health Providers, Government and Payers — but this is category-level evidence, not proof that Dutch insurer budget owners will attend.
+
+### Revised Sales-People / Truviq next action
+
+Use the sponsor proof to switch the opening frame from “will you be at HLTH?” to:
+
+> “Truviq is listed as an HLTH Europe 2026 sponsor. We are booking short workflow-fit conversations during/around HLTH with Dutch health leaders where cross-system orchestration, exception handling or audit/reporting is operationally painful. Who owns that workflow on your side?”
+
+Create a 10-name HLTH routing list before the next outreach batch:
+
+1. Amsterdam UMC — route via CEO/innovation/operations office; qualify cross-hospital workflow, AI governance or care-pathway operationalisation.
+2. University Medical Center Groningen — route via AI strategy and radiology leadership; qualify imaging/AI workflow, exception routing and reporting burden.
+3. DICA IKNL — route via quality/registry leadership; qualify registry-data workflow, audit evidence and provider feedback loops.
+4. VWS international digital health — ecosystem validation only; qualify which national/EU digital-health programmes need implementation partners.
+5. Deloitte Netherlands health — advisory/referral route; qualify where clients struggle with orchestration, exception management or audit-reporting.
+
+### Demolish check
+
+Sponsor presence does **not** prove direct buyer access or budget. The named NL speakers include public, academic, advisory and registry roles; they may validate routes but not own procurement. Disconfirm the campaign if the HLTH agenda/session data shows no operational delivery themes, if contacts cannot name a workflow owner, or if meetings remain “innovation scouting” without a process owner and follow-up proof-of-value route.
+
+### Sources
+
+- https://hlth.com/events/europe/sponsors
+- https://hlth.com/events/europe/speakers
+- https://hlth.com/events/europe/who-attends

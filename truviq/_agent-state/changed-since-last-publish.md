@@ -11,3 +11,8 @@ Only real deltas go here. Cosmetic edits do not count.
 - Official Zorgakkoorden.nl now publishes first AZWA D5 basisfunctionaliteiten handreikingen and regional implementation artefacts.
 - D5/D6 page confirms timing/funding route: VWS prepares SPUK funding for 2027-2029; mandaatgemeenten and preferente zorgverzekeraars make regional werkagenda's; basisfunctionaliteiten must be nationally covered by 2030.
 - Decision delta: TRU-HL-A8D790 remains A-tier but is strengthened from policy monitor to a concrete regional-workagenda discovery route.
+
+## 2026-06-05 H-004 HLTH sponsor/speaker update
+- Official HLTH sponsors page now lists **Truviq Systems BV** as a 2026 sponsor and states the 2026 show floor is sold out.
+- Official HLTH speaker data confirms NL-relevant routing organisations/names across Amsterdam UMC, UMCG, DICA IKNL, VWS and Deloitte Netherlands health.
+- Decision delta: H-004 is strengthened; HLTH should be treated as a Truviq-owned campaign surface with named meeting routes, not only as Dutch Pavilion ecosystem intelligence.

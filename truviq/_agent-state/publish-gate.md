@@ -19,3 +19,4 @@ Public outputs under `/home/hermes/work/output/truviq/` are updated only when at
 - Keep meeting-first language and source URLs.
 - Commit and push to origin main.
 - Verify public/GitHub raw URL where practical.
+2026-06-05 | gate met | H-004 official HLTH sources materially change next action: Truviq Systems BV is listed as a 2026 sponsor and official speaker data gives named NL meeting-routing targets.

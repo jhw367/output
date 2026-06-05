@@ -18,3 +18,11 @@ Append-only compact record of recurring-agent runs.
 - Sources checked: 3 public official/sector sources.
 - Publish gate: met, because official source confirms funding/timing/owner route.
 - Demolish check: this can still be policy/coordination work rather than paid process automation; disconfirm if the workagenda PDFs show only administrative planning without case-level handoffs, evidence/reporting or cross-system implementation ownership.
+
+## 2026-06-05 | H-004 HLTH sponsor/speaker routing test
+- Research question: does official HLTH data reveal named NL provider/payer/programme participants or a changed event role for Truviq?
+- Confirming evidence: official HLTH sponsor page lists Truviq Systems BV as a 2026 sponsor and says the show floor is sold out; official speaker data confirms NL-relevant routing targets at Amsterdam UMC, UMCG, DICA IKNL, VWS and Deloitte Netherlands health.
+- Weakening evidence: no insurer speaker from Zilveren Kruis/VGZ/CZ/Menzis found in the checked official speaker data; “who attends” remains category-level rather than named buyer proof.
+- Sources checked: 3 public official HLTH pages/API-backed pages.
+- Publish gate: met, because the meeting script and next action materially change from “route via pavilion if present” to “activate Truviq sponsor surface and named NL attendee/speaker routing list”.
+- Demolish check: sponsor presence does not prove direct buyer access; disconfirm if agenda/session data lacks healthcare delivery workflow topics or if named NL contacts are advisory/academic/public-policy only without operational budget route.

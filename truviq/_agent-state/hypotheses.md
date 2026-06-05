@@ -27,12 +27,12 @@ Status values: active / strengthened / weakened / rejected / promoted-to-action.
 - Next best test: check the official `Opdracht voor de werkagenda & format` PDF from Zorgakkoorden for exact regional owner, planning and evidence/reporting requirements.
 
 ## H-004 — HLTH Europe/Dutch Pavilion is a routing layer, not buyer list
-- Status: active
+- Status: strengthened
 - Account type: implementation-partner/event-routing hypothesis
-- Current evidence: public outputs cite HLTH Europe 2026 at RAI Amsterdam, Dutch Pavilion route, costs/deadlines, ecosystem partners and Sales-People call guardrails.
+- Current evidence: public outputs cite HLTH Europe 2026 at RAI Amsterdam, Dutch Pavilion route, costs/deadlines, ecosystem partners and Sales-People call guardrails. 2026-06-05 update: official HLTH sources now list Truviq Systems BV as a 2026 sponsor, confirm the 2026 show floor is sold out, and show multiple NL-relevant official speakers/participants including Amsterdam UMC, University Medical Center Groningen, DICA IKNL, VWS and Deloitte Netherlands health-sector representation.
 - Confirm if: official event/pavilion sources reveal named provider/payer/programme attendance, partner meetings or exhibitor routes connected to current A/A- account hypotheses.
 - Weaken/reject if: attendees/exhibitors are mostly generic vendors/startups with no operational owner, provider/payer target or post-event proof-of-value route.
-- Next best test: check official HLTH or Dutch Pavilion exhibitor/attendee source for named NL provider/payer/programme participants.
+- Next best test: use the official HLTH speaker/sponsor data to build a 10-name meeting-routing list, then verify exact session titles/agenda slots for Amsterdam UMC, UMCG, DICA IKNL, VWS and Deloitte.
 
 ## H-005 — Nictiz/VZVZ identity, consent and exchange programmes are ecosystem validation routes
 - Status: active
