@@ -11,6 +11,7 @@ Public outputs under `/home/hermes/work/output/truviq/` are updated only when at
 ## Current gate status
 
 2026-06-05 | gate not met | State repair only. No public HTML/MD output changed.
+2026-06-05 | gate met | H-003 official source confirms funding/timing/owner route: first AZWA handreikingen, 2027-2029 SPUK, mandaatgemeenten + preferente zorgverzekeraars, regional werkagenda's and 2030 national coverage.
 
 ## If gate is met in a future run
 

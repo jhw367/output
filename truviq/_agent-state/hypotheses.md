@@ -19,12 +19,12 @@ Status values: active / strengthened / weakened / rejected / promoted-to-action.
 - Next best test: check one official regional GP organisation or Zilveren Kruis update mentioning digital front-door/triage rollout.
 
 ## H-003 — AZWA basisfunctionaliteiten create regional chain-workflow opportunities
-- Status: active
+- Status: strengthened
 - Account type: regulatory/tender monitor; potential direct-buyer route through regional coalitions
-- Current evidence: public outputs cite official Zorgakkoorden.nl source saying VNG, Zorgverzekeraars Nederland and VWS prepare national framework/criteria, expected Q1 2026; AZWA money starts from 2027; 2026 is preparation time; Valpreventie has explicit multi-step chain workflow.
+- Current evidence: public outputs cite official Zorgakkoorden.nl source saying VNG, Zorgverzekeraars Nederland and VWS prepare national framework/criteria, expected Q1 2026; AZWA money starts from 2027; 2026 is preparation time; Valpreventie has explicit multi-step chain workflow. 2026-06-05 update: official Zorgakkoorden.nl now says first AZWA D5 handreikingen are available, supports gemeenten, zorgverzekeraars and providers, and names workagenda/regioscan artefacts for regional implementation. The D5/D6 programme page adds 2027-2029 SPUK funding, mandaatgemeenten and preferente zorgverzekeraars making regional werkagenda's from regioplannen, with national coverage by 2030.
 - Confirm if: official documents name model-plan owner, regional coalition, insurer programme route, implementation deadline, procurement clue or measurable reporting obligation for Valpreventie, Dementie or Sociaal Verwijzen.
 - Weaken/reject if: route remains policy/funding administration with no operational sponsor or if existing municipal/GGD tooling is sufficient.
-- Next best test: check official Zorgakkoorden/VNG/ZN update for Q1 2026 framework publication or owner map.
+- Next best test: check the official `Opdracht voor de werkagenda & format` PDF from Zorgakkoorden for exact regional owner, planning and evidence/reporting requirements.
 
 ## H-004 — HLTH Europe/Dutch Pavilion is a routing layer, not buyer list
 - Status: active

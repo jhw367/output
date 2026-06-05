@@ -1,6 +1,6 @@
 # Truviq health-market meeting readout — website, scoring, CRM automation
 
-Updated: 2026-05-26 18:35 UTC
+Updated: 2026-06-05 10:55 UTC
 
 ## Executive conclusion
 
@@ -147,10 +147,10 @@ Top current scored leads:
 
 ### TRU-HL-A8D790 — AZWA chain-approach regional governance route — A (91/100)
 - Account type: Regulatory/tender monitor
-- Why fit: Turning chain approaches into basic functionalities creates multi-party workflow needs around eligibility, referral, handoffs, funding evidence, outcome reporting and governance.
-- Programme/procurement clue: AZWA chain approaches; fall prevention; social referral; dementia chain approach; health-social-domain cooperation.
-- Next evidence gap: TRU hypothesis; disconfirm if implementation remains policy/contracting without cross-system operational workflow.
-- Source: https://www.zorgakkoorden.nl/actueel/nieuws/azwa-ketenaanpak-doorontwikkelen-tot-basisfunctionaliteit/
+- Why fit: Turning chain approaches into basic functionalities creates multi-party workflow needs around eligibility, referral, handoffs, regional workagenda execution, funding evidence, outcome reporting and governance.
+- Programme/procurement clue: Official 2026 AZWA D5/D6 update: first handreikingen are available; VWS prepares SPUK funding for 2027-2029; mandaatgemeenten and preferente zorgverzekeraars make regional werkagenda's from regioplannen with providers; national coverage target is 2030.
+- Next evidence gap: Download/read the official `Opdracht voor de werkagenda & format` and related handreiking PDFs to identify case-level handoffs, evidence obligations and the first regional owner to approach. Disconfirm if implementation remains policy/contracting without cross-system operational workflow.
+- Source: https://www.zorgakkoorden.nl/programmas/aanvullend-zorg-en-welzijnsakkoord/Versterking-samenwerking-zorg--en-sociaal-domein/
 
 ### TRU-HL-04CABC — Acute-care regions / MKA-ambulance-SEH-HAP networks — A (91/100)
 - Account type: Regulatory/tender monitor

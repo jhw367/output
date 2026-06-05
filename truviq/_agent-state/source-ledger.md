@@ -53,3 +53,9 @@ Format: `YYYY-MM-DD | URL | result | hypothesis/account | notes`.
 2026-06-05 | https://www.zorgvisie.nl/sehs-laten-gigantische-verschillen-zien-in-kwaliteit/ | used | acute-care lead scoring | NEED/SEH throughput context; not official, keep lower confidence.
 2026-06-05 | https://www.zorgvisie.nl/nza-ruimte-voor-reablement-wordt-onvoldoende-benut/ | used | VVT reablement lead scoring | Reablement context; not official, keep lower confidence.
 2026-06-05 | https://www.zorgvisie.nl/grote-zorg-hacks-schudden-politiek-wakker/ | used | cyber/resilience lead scoring | Cyber-resilience context; not official, keep lower confidence.
+
+## 2026-06-05 run | H-003 AZWA D5/D6 owner/funding/timing test
+
+2026-06-05 | https://www.zorgakkoorden.nl/actueel/nieuws/Eerste-handreikingen-voor-AZWA-basisfunctionaliteiten/ | used | H-003 | Official 1 Jun 2026 update: first AZWA basisfunctionaliteiten handreikingen are available; support gemeenten, zorgverzekeraars and providers at the care/social/public-health interface; developed by AZWA parties under VNG, ZN and VWS regie.
+2026-06-05 | https://www.zorgakkoorden.nl/programmas/aanvullend-zorg-en-welzijnsakkoord/Versterking-samenwerking-zorg--en-sociaal-domein/ | used | H-003 | Official D5/D6 page: basisfunctionaliteiten must be nationally covered by 2030; VWS prepares SPUK funding for 2027-2029; mandaatgemeenten and preferente zorgverzekeraars make regional werkagenda's from regioplannen with providers.
+2026-06-05 | https://www.zn.nl/actueel/zorgverzekeraars-sluiten-aanvullend-zorg-en-welzijnsakkoord-azwa/ | used | H-003 | ZN confirms basisfunctionaliteiten in every municipality, local intervention choice, digital/hybrid/group-treatment capacity shift in GGZ, wait-list transparency and acceleration of data exchange/AI.
