@@ -20,29 +20,38 @@ Trust order:
 3. Agent memory
 4. Chat history
 
+New components must directly connect to the existing repository structure under `h-warm/2502/` and must not introduce alternative storage locations for source-of-truth data, models, ledgers, dashboards or decisions.
+
 ## Decision 2 — Warm2502 Digital Twin
 Warm2502 develops into a reproducible Digital Twin of the home.
 
 The Digital Twin must eventually be able to:
 
-- process current energy data;
+- process uploaded current energy data;
 - preserve historical energy data;
 - run simulations;
 - compare scenarios;
 - evaluate investments;
-- reproduce results.
+- reproduce results;
+- report differences against earlier dataset, model and dashboard versions.
 
-## Decision 3 — Telegram as user interface
+## Decision 3 — Telegram as upload-driven user interface
 Telegram is the primary operational interface for the project.
 
-Target workflow:
+Warm2502 is upload-driven for now. It must not automatically run on a daily or other time-based schedule.
 
-1. User uploads energy data.
-2. Agent recognises file type.
-3. Agent validates content.
-4. Agent archives source data.
-5. Agent places data automatically in the correct GitHub location.
-6. Agent updates the Digital Twin.
+Target workflow when J H uploads HomeWizard, water, EV or KNMI files:
+
+1. Agent receives uploaded file(s) through Telegram.
+2. Agent recognises dataset family and file type.
+3. Agent validates content before downstream use.
+4. Agent archives the raw source file unchanged.
+5. Agent places the file automatically in the correct GitHub location.
+6. Agent records dataset version/hash and validation result in ledgers.
+7. Agent updates the Digital Twin with a reproducible model run.
+8. Agent recalculates Htr, energy balance and scenario outcomes where inputs are sufficient.
+9. Agent updates dashboard and ledgers.
+10. Agent reports differences compared with the previous version.
 
 Supported datasets:
 
@@ -51,9 +60,21 @@ Supported datasets:
 - HomeWizard Water
 - KNMI data
 - EV charging data
-- future energy datasets
+- future energy datasets, only after explicit mapping into the GitHub ingest structure
 
-## Decision 4 — Home Assistant preparation
+## Decision 4 — No scheduled data checks or automatic missing-data optimisation
+Warm2502 must not use time-triggered automation for now.
+
+Explicit exclusions:
+
+- no daily data checks;
+- no scheduled Warm2502 cronjobs;
+- no automatic optimisation based on missing data;
+- no implicit imputation/fallbacks that alter calculations without a recorded rule and user approval.
+
+Missing data must be reported as a limitation unless an approved model rule exists in GitHub.
+
+## Decision 5 — Home Assistant preparation
 Warm2502 must be prepared for a future Home Assistant implementation.
 
 Do not implement Home Assistant yet.
@@ -73,20 +94,27 @@ Preferred direction:
 - local-first architecture;
 - cloud-independent where possible.
 
-## Decision 5 — Agent behaviour
+The preparation roadmap is recorded in `home-assistant-roadmap.md` and is not an implementation approval.
+
+## Decision 6 — Agent behaviour
 Dora, Hermes, Codex and future agents must actively contribute to improving:
 
+- the Telegram upload pipeline;
+- the GitHub ingest structure;
 - the Digital Twin;
 - data quality;
 - reproducibility;
+- dataset versioning;
 - dashboards;
 - storage structure;
-- documentation.
+- documentation;
+- Home Assistant roadmap;
+- model/dashboard/user-interface improvements.
 
-Agents may propose improvements but must not change fundamental architecture without explicit approval.
+Agents may propose and document improvements but must not change fundamental architecture or create time-scheduled Warm2502 automation without explicit approval.
 
 ## Resulting architecture direction
-Warm2502 develops into an independently reproducible energy platform in which Telegram, GitHub, Home Assistant and the Digital Twin work together, with GitHub as the permanent source of truth.
+Warm2502 develops into an independently reproducible, upload-driven energy platform in which Telegram, GitHub, future Home Assistant and the Digital Twin work together, with GitHub as the permanent source of truth.
 
 ## Operational instruction for agents
 Before acting on Warm2502 tasks, agents must first read:
@@ -97,3 +125,5 @@ Before acting on Warm2502 tasks, agents must first read:
 4. relevant raw or processed dataset documentation under `h-warm/2502/data/`
 
 If the user asks a question already answerable from GitHub, answer from GitHub instead of asking for clarification.
+
+When a user uploads a relevant file, the agent must use the upload-driven protocol in `data/documentation/upload-driven-ingest.md` and update the ledgers before reporting completion.
