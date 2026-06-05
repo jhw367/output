@@ -47,3 +47,19 @@ Append-only compact record of recurring-agent runs.
 - Publish gate: met, because H-003 moved from national-framework discovery to one named regional discovery target and the next meeting question materially changed.
 - Dashboard updated: yes, one dashboard update.
 - Demolish check: Amsterdam may already have mature public-health/social-domain tooling and internal reporting capacity; disconfirm Truviq fit if referral monitoring and chain handoffs are already handled by incumbent municipal/GGD/provider systems with no external workflow owner or procurement route.
+
+## 2026-06-06 | H003-AMS-001 Amsterdam ownership/commercial-routing test
+- Active lead: H003-AMS-001.
+- Research question: who owns monitoring, coordination, exception handling, implementation, reporting or programme execution for Amsterdam Valpreventie / Sociaal Verwijzen / IZA Amsterdam initiatives?
+- Scope: one active hypothesis (H-003), max two organisations (GGD Amsterdam, Team Sportservice Amsterdam), no broader AZWA context, no other regions, no workflow re-analysis.
+- Sources checked: 5 public sources within starting budget 5-8.
+- Source budget used: 5/8.
+- Adaptive usage log: provider health good (no quota/provider errors); token consumption acceptable for decision yield; scope was not expanded beyond two organisations because success criteria were met; convergence improved from regional evidence-gap to implementation-partner/contact route.
+- Decision yield: high; one implementation partner and two named routing contacts were identified.
+- Confirming evidence: GGD Amsterdam positions Vitaal Ouder Worden as the programme context for seniors and Valpreventie, names GGD Amsterdam as programme owner/operator, and its Laat je niet vallen page says In Balans and Zeker Bewegen are executed by partner Team Sportservice Amsterdam. Team Sportservice Amsterdam confirms it runs Amsterdam health/preventive-care movement projects, identifies sociaal-medische beweegnetwerken as an Amsterdam Vitaal en Gezond initiative, and publishes two named contacts: Mirjam Barth (Captain Gezonde Leefstijl Volwassenen) and Anton Stoter (Regisseur Gezonde Leefstijl Volwassenen).
+- Weakening evidence: no formal procurement route, budget owner, AZWA workagenda owner, or named municipal/GGD programme director for Sociaal Verwijzen was found in this narrow cycle.
+- Decision label: meeting target for implementation-route discovery, not direct buyer yet.
+- Recommended next action: ask Team Sportservice Amsterdam contacts for the owner of monitoring/reporting and exception routing across Valpreventie/social-medical movement networks, and ask who at GGD Amsterdam/Gemeente Amsterdam owns contract/procurement if external workflow support is needed.
+- Publish gate: met, because implementation partner and named routing contacts were identified and lead status changes from Evidence Gap to Meeting Target for discovery.
+- Dashboard updated: yes, one dashboard update.
+- Demolish check: Team Sportservice may only execute activity delivery and not own data/reporting/procurement; disconfirm Truviq fit if all monitoring/reporting is handled inside GGD/Gemeente systems and TSA has no influence over workflow tooling.

@@ -27,3 +27,9 @@ Only real deltas go here. Cosmetic edits do not count.
 - H-003 now has one concrete regional discovery target: Amsterdam municipality / IZA region Amsterdam, based on official RIVM Regiobeeld mapping and monitoring datasets.
 - Evidence delta: Amsterdam is no longer just part of a national AZWA route; public data shows Valpreventie and Sociaal Verwijzen chain-approach maturity and referral-volume monitoring, which is directly relevant to governed handoffs, exceptions, monitoring and audit trails.
 - Decision delta: label is **close one evidence gap**, not meeting target yet. The gap is the named Amsterdam workagenda/budget/procurement owner and whether current tooling leaves an external workflow-orchestration need.
+
+## 2026-06-06 H003-AMS-001 Amsterdam ownership/commercial-routing update
+- Lead H003-AMS-001 moves from **Evidence Gap** to **Meeting Target for implementation-route discovery**.
+- Evidence delta: GGD Amsterdam owns/publishes the Vitaal Ouder Worden / Laat je niet vallen programme context, while Team Sportservice Amsterdam is identified as implementation partner for In Balans and Zeker Bewegen and publishes named collaboration contacts.
+- Remaining gap: procurement route and formal buyer remain unknown; Team Sportservice may be an execution/routing partner rather than budget holder.
+- Adaptive run log: 5/8 sources used, two organisations only, no provider errors, no scope expansion needed after implementation partner + named contacts met success criteria.
