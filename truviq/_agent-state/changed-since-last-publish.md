@@ -16,3 +16,9 @@ Only real deltas go here. Cosmetic edits do not count.
 - Official HLTH sponsors page now lists **Truviq Systems BV** as a 2026 sponsor and states the 2026 show floor is sold out.
 - Official HLTH speaker data confirms NL-relevant routing organisations/names across Amsterdam UMC, UMCG, DICA IKNL, VWS and Deloitte Netherlands health.
 - Decision delta: H-004 is strengthened; HLTH should be treated as a Truviq-owned campaign surface with named meeting routes, not only as Dutch Pavilion ecosystem intelligence.
+
+## 2026-06-05 H-003 AZWA workagenda/financing update
+- Official workagenda/checklist/VWS sources now confirm September 2026 regional workagenda timing and mandaatgemeente + preferente zorgverzekeraar ownership.
+- Evidence strengthened from generic regional-workagenda route to a more actionable discovery script: ask who owns monitoring, workprocess verankering, cross-domain execution and repeated regioscan follow-up.
+- Decision delta: H-003 remains strengthened, but next run should move from national framework reading to one concrete regional owner/coalition check.
+

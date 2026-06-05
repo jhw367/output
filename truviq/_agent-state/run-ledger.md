@@ -26,3 +26,12 @@ Append-only compact record of recurring-agent runs.
 - Sources checked: 3 public official HLTH pages/API-backed pages.
 - Publish gate: met, because the meeting script and next action materially change from “route via pavilion if present” to “activate Truviq sponsor surface and named NL attendee/speaker routing list”.
 - Demolish check: sponsor presence does not prove direct buyer access; disconfirm if agenda/session data lacks healthcare delivery workflow topics or if named NL contacts are advisory/academic/public-policy only without operational budget route.
+
+## 2026-06-05 | H-003 AZWA werkagenda + financieringsinstrument
+- Research question: do the official AZWA workagenda/checklist/letter documents name the regional owner, timing and execution/monitoring obligations enough to make H-003 more actionable?
+- Confirming evidence: official Zorgakkoorden/VWS documents confirm the regional workagenda is made under mandaatgemeente + preferente zorgverzekeraar regie, with partners involved, September 2026 workagenda timing, 2027-2029 SPUK financing preparation, monitoring/regioscan repetition, and process/governance requirements.
+- Weakening evidence: still no named procurement or direct Truviq buyer; route remains regional programme discovery, not a confirmed sales opportunity.
+- Sources checked: 5 official Zorgakkoorden/VWS sources.
+- Publish gate: met, because official documents add owner/timing/monitoring/workprocess details that materially improve the meeting-discovery script.
+- Demolish check: the documents may still lead to policy coordination and local public-sector implementation rather than paid external workflow automation; disconfirm if regional workagenda owners already use incumbent municipal/GGD tooling for monitoring and case handoff.
+
