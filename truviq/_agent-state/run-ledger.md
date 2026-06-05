@@ -35,3 +35,15 @@ Append-only compact record of recurring-agent runs.
 - Publish gate: met, because official documents add owner/timing/monitoring/workprocess details that materially improve the meeting-discovery script.
 - Demolish check: the documents may still lead to policy coordination and local public-sector implementation rather than paid external workflow automation; disconfirm if regional workagenda owners already use incumbent municipal/GGD tooling for monitoring and case handoff.
 
+
+## 2026-06-05 | H-003 Amsterdam AZWA/social-prescribing workflow-opportunity test
+- Research question: does one concrete NL region show enough public official evidence to move H-003 from national AZWA route to a specific workflow-fit discovery target?
+- Region tested: Amsterdam municipality / IZA region Amsterdam (GM0363 / RA0616).
+- Confirming evidence: official RIVM Regiobeeld data maps Amsterdam municipality to IZA region Amsterdam and care-office region Amsterdam; the same public datasets show Amsterdam has started/matured Valpreventie and Sociaal Verwijzen chain approaches, has social-referral volume data, and has a prevention-infrastructure score. This creates a concrete workflow-discovery surface around monitoring, handoffs, referrals and cross-domain governance.
+- Weakening evidence: no named Amsterdam AZWA regional workagenda owner, procurement route, budget owner or external implementation need was found in this narrow cycle; RIVM data proves monitoring/implementation signals, not a buyer.
+- Sources checked: 5 public RIVM/Regiobeeld sources.
+- Decision label: close one evidence gap.
+- Recommended next action: verify the Amsterdam mandaatgemeente/preferente-zorgverzekeraar owner and ask whether Sociaal Verwijzen or Valpreventie monitoring/referral workflows require external orchestration support before treating Amsterdam as a meeting target.
+- Publish gate: met, because H-003 moved from national-framework discovery to one named regional discovery target and the next meeting question materially changed.
+- Dashboard updated: yes, one dashboard update.
+- Demolish check: Amsterdam may already have mature public-health/social-domain tooling and internal reporting capacity; disconfirm Truviq fit if referral monitoring and chain handoffs are already handled by incumbent municipal/GGD/provider systems with no external workflow owner or procurement route.

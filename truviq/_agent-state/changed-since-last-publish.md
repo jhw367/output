@@ -22,3 +22,8 @@ Only real deltas go here. Cosmetic edits do not count.
 - Evidence strengthened from generic regional-workagenda route to a more actionable discovery script: ask who owns monitoring, workprocess verankering, cross-domain execution and repeated regioscan follow-up.
 - Decision delta: H-003 remains strengthened, but next run should move from national framework reading to one concrete regional owner/coalition check.
 
+
+## 2026-06-05 H-003 Amsterdam regional opportunity update
+- H-003 now has one concrete regional discovery target: Amsterdam municipality / IZA region Amsterdam, based on official RIVM Regiobeeld mapping and monitoring datasets.
+- Evidence delta: Amsterdam is no longer just part of a national AZWA route; public data shows Valpreventie and Sociaal Verwijzen chain-approach maturity and referral-volume monitoring, which is directly relevant to governed handoffs, exceptions, monitoring and audit trails.
+- Decision delta: label is **close one evidence gap**, not meeting target yet. The gap is the named Amsterdam workagenda/budget/procurement owner and whether current tooling leaves an external workflow-orchestration need.

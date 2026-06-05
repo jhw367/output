@@ -21,3 +21,4 @@ Public outputs under `/home/hermes/work/output/truviq/` are updated only when at
 - Verify public/GitHub raw URL where practical.
 2026-06-05 | gate met | H-004 official HLTH sources materially change next action: Truviq Systems BV is listed as a 2026 sponsor and official speaker data gives named NL meeting-routing targets.
 2026-06-05 | gate met | H-003 official workagenda/checklist/VWS sources add owner/timing/monitoring/workprocess evidence: September 2026 workagenda, mandaatgemeente + preferente zorgverzekeraar regie, 2027-2029 SPUK and repeated regioscan monitoring.
+2026-06-05 | gate met | H-003 moved from national AZWA route to one named regional discovery target: Amsterdam municipality / IZA region Amsterdam, with RIVM Regiobeeld evidence for Valpreventie/Sociaal Verwijzen monitoring and a changed next action to owner/procurement verification.
