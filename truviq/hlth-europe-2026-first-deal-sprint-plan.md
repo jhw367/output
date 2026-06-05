@@ -281,3 +281,89 @@ Collector addition, 2026-05-26 19:14 UTC: add CRM field `operational_owner_route
 - Secondary routing: Nictiz PZP standard consultation → EHR/ECD vendor implementation.
 - Sales-People: one call note per PZP target; use `pzp_route` field (values: `proves_connectathon`, `nictiz_consultation`, `provider_implementation`, `vendor_route`, `unknown`). Do not call two separate PZP tracks into the same ecosystem contact.
 - Merge trigger: deep-job merges the two records when a named provider/region implementation project distinguishes the routes.
+
+---
+
+## HLTH Europe 2026 — pre-event intelligence update (2026-05-28)
+
+### Confirmed event structure
+
+- **Show floor sold out:** HLTH sponsors page (2026-05-28) confirms 2026 show floor is fully sold out. Limited branding still available. Demand signal is high; NL-relevant buyers and decision-makers are likely well-represented.
+- **Title sponsors confirmed:** Google for Health, Heidi, Siemens Healthineers AG, United Imaging, WW International Inc.
+- **NL sponsor confirmed: Task Force Health Care (TFHC)** is listed as a sponsor on the official HLTH sponsors page. TFHC is also the organiser of the Dutch HLTH presence and runs the Dutch Pavilion programme. Contact: info@tfhc.nl / +316 82 39 04 68 / Aert van Nesstraat 45, 9th Floor, Office 9.31, 3012 CA Rotterdam.
+- **Dutch Pavilion confirmed** as an official HLTH special programme track in the HLTH navigation. This is a dedicated Dutch innovation exhibition area within RAI Amsterdam.
+- **Sources:** https://hlth.com/events/europe/sponsors/ ; https://tfhc.nl/agenda/ (both confirmed 2026-05-28)
+
+### Confirmed NL-relevant speaker
+
+- **Aida Demneri** — Partner, Health Sector Lead, Netherlands — Deloitte — confirmed speaker at HLTH Europe 2026 (page 1 of speakers list, confirmed 2026-05-28).
+  - Public governance/routing contact only; not confirmed as buyer or budget owner.
+  - Relevance: Deloitte NL health advisory relationships with Dutch insurers, hospitals, VWS programmes and regional networks. A conversation with Demneri can reveal which NL health transformation workflows Deloitte clients are struggling to operationalise — a direct Truviq/Camunda referral route.
+  - Outreach angle: "In which NL health transformation advisory projects are you seeing unsolved cross-system workflow orchestration, exception management or audit-reporting gaps?"
+  - Source: https://hlth.com/events/europe/speakers/
+
+### TFHC HLTH programme — post-event windows
+
+TFHC has confirmed three HLTH-related activities in the Dutch market:
+1. **Amsterdam | HLTH Europe 2026** — 15–18 June 2026 (TFHC participates as sponsor/organiser of Dutch Pavilion). Detail: https://tfhc.nl/event/hlth2026officialregistration/
+2. **Netherlands | TFHC Partner Event** — 24 June 2026. Post-HLTH gathering for Dutch health-tech network. This is a high-value follow-up window 6 days after HLTH ends.
+3. **Amsterdam | Health Holland Internationalisation Session** — 2 July 2026. Health Holland ecosystem session.
+- Sales-People action: book post-HLTH follow-up meetings during the 24 June or 2 July sessions for HLTH contacts not converted into next-step agreements at the event itself.
+
+### New account: TFHC (TRU-HL-TFHC01)
+
+- **Account type:** Implementation partner / event organiser / NL health ecosystem builder
+- **Why relevant:** Confirmed HLTH sponsor; runs Dutch Pavilion; connects 35+ Dutch health-tech startups/scaleups to international buyers and partners annually; post-event programme provides follow-up windows.
+- **Truviq angle:** (a) Partner route to Dutch health-tech startups that need workflow orchestration capability to strengthen their customer delivery; (b) introduction route to NL provider/payer decision-makers that TFHC has brokered meetings with at HLTH.
+- **Sales-People ask:** "Is TFHC coordinating meeting slots between Dutch health-tech companies and Dutch/EU providers or payers at HLTH? What types of Dutch health system organisations are attending through the TFHC network at HLTH 2026?"
+- **Demolish:** TFHC is primarily a trade-promotion and internationalisation organisation. Their HLTH network is mostly Dutch health-tech startups looking to go international — not NL operational buyers. Route to TFHC primarily for introduction intelligence and ecosystem mapping, not direct buyer access.
+- **Source:** https://tfhc.nl ; https://tfhc.nl/agenda/ ; https://hlth.com/events/europe/sponsors/
+
+### Top 5 pre-HLTH outreach priorities for Sales-People
+
+Prioritised by account fit + HLTH likely presence + named workflow hypothesis. Confirm HLTH attendance before booking travel.
+
+**1. Zorg bij jou / Santeon (TRU-HL-9BE508)**
+- Priority: Direct buyer, €77m IZA funding, 16 hospitals
+- HLTH angle: "When scaling new hospitals or pathways onto the Zorg bij jou platform, how are patient-safety escalations and IZA tranche-reporting handled — manually or by a system?"
+- Pre-event action: LinkedIn outreach with event hook 7–10 days before HLTH
+- Demolish: Santeon may send innovation/comms rather than operational buyer; down-rank if contact cannot name the exception-routing or result-reporting owner
+
+**2. Zilveren Kruis / digital-triage primary care**
+- Priority: Payer-driven workflow + 10% adoption target
+- HLTH angle: "Who owns the workflow for GP regional rollout, tool adoption tracking and evidence assembly for the 10% digital-triage target — is that process manual or automated?"
+- Pre-event action: check HLTH attendee list for Achmea/Zilveren Kruis names; route via Deloitte NL health if no direct contact found
+- Demolish: insurer contracting staff often skip innovation events; digital-triage measurement may be solved inside standard GP/insurer reporting
+
+**3. Siemens Healthineers (Title Sponsor — ecosystem partner route)**
+- Priority: High-value partnership/reference conversation; confirmed HLTH presence (title sponsor)
+- HLTH angle: "Which NL hospital workflows around diagnostics, imaging, care escalation or reporting are still creating manual cross-system exceptions — and where does Siemens see the integration boundary problem?"
+- Pre-event action: identify Siemens Healthineers NL health speaker/booth contact; prepare Truviq integration-partner pitch deck
+- Demolish: Siemens is a platform company — they may position as solving the orchestration problem themselves; prepare a partner rather than competitor frame
+
+**4. Deloitte NL health sector (Aida Demneri — confirmed HLTH speaker)**
+- Priority: Ecosystem influencer + advisory referral route to NL health buyers
+- HLTH angle: "In which NL health transformation advisory engagements are you seeing unsolved cross-system workflow orchestration or audit-reporting gaps where an independent orchestration layer could help?"
+- Pre-event action: check Demneri's scheduled HLTH sessions; attend or request a 20-minute sidebar meeting during HLTH
+- Demolish: Deloitte advisory relationships are confidential; referral route requires trust; this is a medium-term not short-term conversion
+
+**5. TFHC / Dutch Pavilion companies (TRU-HL-TFHC01)**
+- Priority: Partner/introduction channel for Truviq NL health market entry
+- HLTH angle: "Which Dutch health-tech companies in the Pavilion are trying to demonstrate workflow orchestration or cross-system integration capability to Dutch provider or payer buyers — and where is the delivery gap?"
+- Pre-event action: contact TFHC programme team at info@tfhc.nl to understand which Pavilion companies are looking for NL workflow implementation partners
+- Demolish: Pavilion companies are primarily startups seeking international exposure; the introductions may not lead to near-term NL provider/payer deals without a secondary follow-up round
+
+### 18 days to HLTH — daily action cadence for Sales-People
+
+- **Days 1–7 (today to 3 June):** Pre-qualify HLTH attendance for top 5 accounts; send personalised LinkedIn/email with "Will you be at HLTH June 15-18?" hook + specific workflow question. Target: 3 confirmed attendances + at least 1 pre-booked meeting time slot.
+- **Days 8–14 (4–10 June):** Follow up on non-replies; research HLTH agenda for NL-relevant sessions (use HLTH agenda page); book informal meeting slot at Dutch Pavilion area or programme breakout for any confirmed account contacts.
+- **Days 15–18 (11–14 June):** Final confirmation round; prepare 5 one-page workflow-fit briefings (one per top-5 account); confirm meeting schedule in calendar; prepare digital business card / meeting-request tool for walk-up at event.
+- **During HLTH (15–18 June):** Run daily triage at 09:00; reconfirm next-day meetings at 11:30; update CRM fields at 16:30; decide next-day top-5 walk-up targets at 17:30. Zero unqualified "innovation chat" meetings without a named workflow hypothesis.
+- **Post-HLTH (19–24 June):** 24-hour follow-up email/LinkedIn for all meetings held; assign to next step (proposal/PoV/qualification call/nurture). TFHC Partner Event 24 June: attend if any Pavilion introductions warrant follow-up.
+
+### Demolish check — HLTH pre-event plan (2026-05-28)
+
+- HLTH attendance is confirmed for Siemens Healthineers (title sponsor) and Aida Demneri (Deloitte NL speaker). All other NL account HLTH attendance is a hypothesis.
+- The "1 in 3 C-suite" claim covers all geographies and industries; NL-specific operational buyer attendance is unverified.
+- NL health operational buyers (hospital COOs, insurer contracting leads, VWS programme owners) tend to attend NL-native events (ICT&health, Skipr, VWS-organised sessions) more than international innovation events.
+- Disconfirming signal: if the first 3 pre-event outreach rounds yield fewer than 2 confirmed HLTH attendances among top-5 accounts, shift energy to the 24 June TFHC Partner Event and 2 July Health Holland session as alternative meeting windows.
