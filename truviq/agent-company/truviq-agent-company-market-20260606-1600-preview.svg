@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f2a44"/><stop offset=".55" stop-color="#081018"/><stop offset="1" stop-color="#031018"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<circle cx="1050" cy="90" r="220" fill="#1e40af" opacity=".25"/><circle cx="170" cy="560" r="260" fill="#0f766e" opacity=".22"/>
+<text x="70" y="90" fill="#5eead4" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="4">TRUVIQ HEALTH MARKET</text>
+<text x="70" y="170" fill="#eef7ff" font-family="Arial, sans-serif" font-size="64" font-weight="800">Agent-company plan</text>
+<text x="70" y="230" fill="#cfe4f7" font-family="Arial, sans-serif" font-size="34">gBrain → orchestrator → pods → scoped agents</text>
+<g transform="translate(70,300)">
+ <rect width="210" height="95" rx="20" fill="#101b27" stroke="#244762"/><text x="26" y="44" fill="#fff" font-family="Arial" font-size="26" font-weight="700">55 signals</text><text x="26" y="72" fill="#9eb2c7" font-family="Arial" font-size="20">18 A-leads</text>
+ <rect x="240" width="210" height="95" rx="20" fill="#101b27" stroke="#244762"/><text x="266" y="44" fill="#fff" font-family="Arial" font-size="26" font-weight="700">5 pods</text><text x="266" y="72" fill="#9eb2c7" font-family="Arial" font-size="20">focused lanes</text>
+ <rect x="480" width="250" height="95" rx="20" fill="#101b27" stroke="#244762"/><text x="506" y="44" fill="#fff" font-family="Arial" font-size="26" font-weight="700">10 routes</text><text x="506" y="72" fill="#9eb2c7" font-family="Arial" font-size="20">first qualification</text>
+ <rect x="760" width="280" height="95" rx="20" fill="#101b27" stroke="#244762"/><text x="786" y="44" fill="#fff" font-family="Arial" font-size="26" font-weight="700">3-of-4 gate</text><text x="786" y="72" fill="#9eb2c7" font-family="Arial" font-size="20">before outreach</text>
+</g>
+<text x="70" y="520" fill="#eef7ff" font-family="Arial" font-size="30" font-weight="700">50% direct buyers · 30% ecosystem/partner · 20% regulatory/tender</text>
+<text x="70" y="565" fill="#9eb2c7" font-family="Arial" font-size="24">Public workdocument · v20260606-1600</text>
+</svg>
