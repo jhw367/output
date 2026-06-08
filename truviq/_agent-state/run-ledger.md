@@ -63,3 +63,11 @@ Append-only compact record of recurring-agent runs.
 - Publish gate: met, because implementation partner and named routing contacts were identified and lead status changes from Evidence Gap to Meeting Target for discovery.
 - Dashboard updated: yes, one dashboard update.
 - Demolish check: Team Sportservice may only execute activity delivery and not own data/reporting/procurement; disconfirm Truviq fit if all monitoring/reporting is handled inside GGD/Gemeente systems and TSA has no influence over workflow tooling.
+
+## 2026-06-08 | H-001 Zorg bij jou 2026 pathway-expansion/operations test
+- Research question: do current official Zorg bij jou sources show 2026 pathway expansion, operational roles or unresolved measurement/exception workflows that make H-001 actionable for Truviq workflow-fit meetings?
+- Confirming evidence: official Zorg bij jou articles confirm 2026 operations are not static: a March 2026 webinar names implementation, transformation, pathway-design, regional and medical-service-centre leads for impact delivery; a February 2026 chronic-kidney-disease pathway article describes remote monitoring, lab-value integration, trend-based alarms, MSC assessment and supervision handoffs; an October 2025 expansion article says three new cooperative members joined, including Ikazia starting three pathways at once and Van Weel-Bethesda considering a pregnancy-diabetes next phase in early 2026.
+- Weakening evidence: the sources mostly show Zorg bij jou executing the operating model itself; no external procurement route, open integration backlog or explicit unmet workflow/tooling need was found.
+- Sources checked: 5 public Zorg bij jou URLs were touched; 3 were decision-useful official sources.
+- Publish gate: met, because official source confirms 2026 pathway expansion/timing and materially sharpens the meeting question toward pathway-onboarding, lab-value exception handling and result-evidence workflows.
+- Demolish check: Zorg bij jou may already own the platform, medical service centre and care-path design capacity; disconfirm Truviq fit if lab-value integration, alarms, supervision handoff and tranche/evaluation reporting are already fully covered by incumbent app/MSC/Santeon tooling and contracts.

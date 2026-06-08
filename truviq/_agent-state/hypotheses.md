@@ -3,12 +3,12 @@
 Status values: active / strengthened / weakened / rejected / promoted-to-action.
 
 ## H-001 — Zorg bij jou / Santeon funded hybrid-care workflow route
-- Status: active
+- Status: strengthened
 - Account type: direct buyer / implementation-partner route
-- Current evidence: public outputs cite Zorg bij jou scale (16 connected hospitals, 33,000+ patients), AVL oncology launch, NEN 7510 certification and official Santeon €77m IZA transformation money paid in tranches on achieved results.
+- Current evidence: public outputs cite Zorg bij jou scale (16 connected hospitals, 33,000+ patients), AVL oncology launch, NEN 7510 certification and official Santeon €77m IZA transformation money paid in tranches on achieved results. 2026-06-08 update: official Zorg bij jou articles confirm current pathway expansion and operations complexity: a March 2026 webinar names implementation/transformation/pathway/regional/medical-service-centre leads for impact delivery and care-path optimisation; a Feb 2026 chronic-kidney-disease pathway uses remote monitoring, lab-value integration, trend alarms, MSC assessment and supervision handoff; and the expansion to eleven cooperative members includes Ikazia starting three pathways at once and Van Weel-Bethesda possible pregnancy-diabetes next phase in early 2026.
 - Confirm if: a current official page or procurement/programme source shows unresolved workflow needs around pathway onboarding, medical-service-centre exceptions, treating-team handoff, patient adoption, evaluation/reporting evidence, or tranche/milestone accountability.
 - Weaken/reject if: evidence shows all workflow/reporting is fully solved inside incumbent Zorg bij jou/Santeon platform/service contracts with no external implementation budget route.
-- Next best test: check one Santeon/Zorg bij jou official update or procurement/governance source for 2026 pathway expansion and result-evidence responsibilities.
+- Next best test: verify the commercial route: identify whether Santeon/Zorg bij jou has an external procurement/integration route for pathway-onboarding, lab-value exception handling, MSC supervision handoffs or result-evidence reporting, or whether all work is locked inside incumbent app/MSC contracts.
 
 ## H-002 — Zilveren Kruis digital-triage GP route as payer-driven workflow-control opportunity
 - Status: active

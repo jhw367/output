@@ -33,3 +33,8 @@ Only real deltas go here. Cosmetic edits do not count.
 - Evidence delta: GGD Amsterdam owns/publishes the Vitaal Ouder Worden / Laat je niet vallen programme context, while Team Sportservice Amsterdam is identified as implementation partner for In Balans and Zeker Bewegen and publishes named collaboration contacts.
 - Remaining gap: procurement route and formal buyer remain unknown; Team Sportservice may be an execution/routing partner rather than budget holder.
 - Adaptive run log: 5/8 sources used, two organisations only, no provider errors, no scope expansion needed after implementation partner + named contacts met success criteria.
+
+## 2026-06-08 H-001 Zorg bij jou operations/pathway update
+- H-001 strengthens from generic funded hybrid-care route to a sharper workflow-fit discovery target: current official Zorg bij jou articles show named impact/implementation roles, pathway/design/regional/MSC responsibilities, lab-value exception workflows and 2026 pathway expansion.
+- Evidence delta: chronic-kidney-disease monitoring combines patient input, hospital/local-lab values, trend alarms, MSC assessment and specialist supervision handoffs — a concrete workflow to ask about without claiming Zorg bij jou needs Truviq.
+- Decision delta: meeting question changes to: which 2026 pathway-onboarding, lab-value exception, MSC handoff or result-evidence workflow is hardest to operationalise, and is there any external procurement route beyond incumbent platform/MSC contracts?
