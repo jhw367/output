@@ -38,3 +38,8 @@ Only real deltas go here. Cosmetic edits do not count.
 - H-001 strengthens from generic funded hybrid-care route to a sharper workflow-fit discovery target: current official Zorg bij jou articles show named impact/implementation roles, pathway/design/regional/MSC responsibilities, lab-value exception workflows and 2026 pathway expansion.
 - Evidence delta: chronic-kidney-disease monitoring combines patient input, hospital/local-lab values, trend alarms, MSC assessment and specialist supervision handoffs — a concrete workflow to ask about without claiming Zorg bij jou needs Truviq.
 - Decision delta: meeting question changes to: which 2026 pathway-onboarding, lab-value exception, MSC handoff or result-evidence workflow is hardest to operationalise, and is there any external procurement route beyond incumbent platform/MSC contracts?
+
+## 2026-06-10 H-005 EDI-wallet/EHDS timing update
+- Official Nictiz source corrects/sharpens the EDI-wallet acceptance timeline: public healthcare parties from 24 Dec 2026 for foreign EU EDI-wallets, private care providers/insurers from 24 Dec 2027 where online identification/authentication is needed, and Dutch EDI-wallet acceptance expected for the whole care sector from 1 Jan 2028.
+- Evidence delta: implementation is not only an identity-screen change; Nictiz explicitly names security, privacy, management processes, user communication, servicedesk processes and ICT-supplier agreements as affected workstreams.
+- Decision delta: H-005 strengthens as an ecosystem validation route, but still not a direct buyer; next meeting/research question should find one named provider/insurer/GGD/care-office readiness owner or procurement route before pitching.

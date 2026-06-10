@@ -35,9 +35,9 @@ Status values: active / strengthened / weakened / rejected / promoted-to-action.
 - Next best test: use the official HLTH speaker/sponsor data to build a 10-name meeting-routing list, then verify exact session titles/agenda slots for Amsterdam UMC, UMCG, DICA IKNL, VWS and Deloitte.
 
 ## H-005 — Nictiz/VZVZ identity, consent and exchange programmes are ecosystem validation routes
-- Status: active
+- Status: strengthened
 - Account type: ecosystem influencer / regulatory monitor
-- Current evidence: public outputs cite eIDAS/EDI wallet timing, VZVZ 2026 operational excellence, Mitz/ZORG-ID/ZORG-AB, PZP and acute-care standards.
+- Current evidence: public outputs cite eIDAS/EDI wallet timing, VZVZ 2026 operational excellence, Mitz/ZORG-ID/ZORG-AB, PZP and acute-care standards. 2026-06-10 update: official Nictiz sources clarify the EDI-wallet acceptance timeline and operational impact: foreign EU EDI-wallet acceptance applies to public healthcare parties from 24 Dec 2026, private care providers and insurers from 24 Dec 2027 when online identification/authentication is needed, and Dutch EDI-wallet acceptance is expected for the whole care sector from 1 Jan 2028. Nictiz also states preparation affects security, privacy, management processes, user communication, servicedesk processes and ICT-supplier agreements; Xt-EHR results shift EHDS from policy to practical implementation guidelines for patient summaries, medication data, imaging, lab/results and discharge reports.
 - Confirm if: source names provider/vendor pilots with workflow readiness, release governance, exception handling, consent/identity audit or handoff accountability beyond standards publication.
 - Weaken/reject if: work stays entirely within identity, EHR, standards or exchange vendors without a process-governance gap Truviq can own.
-- Next best test: check one official Nictiz/VZVZ programme update for pilots, consultation outcomes or implementation deadline.
+- Next best test: identify one public or academic hospital, GGD, care-office or insurer EDI-wallet readiness page/procurement item that names the portal/IAM/vendor owner and implementation route for the 2026-2028 acceptance deadlines.

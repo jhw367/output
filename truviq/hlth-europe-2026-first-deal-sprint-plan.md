@@ -105,9 +105,9 @@ Updated: 2026-05-26 23:04 UTC
 ### 2. Nictiz / eIDAS-in-care EDI wallet programme — A (88/100)
 
 - Account type: Ecosystem influencer / regulatory monitor
-- Named programme / route: eIDAS in de zorg; EDI wallet acceptance obligation from November 2026
-- Procurement signal: Official Nictiz timing signal creates implementation deadline
-- Technology-stack evidence: Patient portals, identity/authentication, EHR/ECD access, consent, exception handling, audit logs
+- Named programme / route: eIDAS in de zorg; EDI-wallet acceptance route now clarified by Nictiz: foreign EU EDI-wallets for public healthcare parties from 24 Dec 2026, private care providers/insurers from 24 Dec 2027 where online ID/authentication is needed, and Dutch EDI-wallet acceptance expected for the whole care sector from 1 Jan 2028
+- Procurement signal: Official Nictiz timing and impact signal creates readiness deadline; preparation affects security, privacy, management processes, user communication, servicedesk processes and ICT-supplier agreements
+- Technology-stack evidence: Patient portals, identity/authentication, EHR/ECD access, consent, exception handling, audit logs, EHDS implementation guidelines for patient summaries, medication, imaging, lab/results and discharge reports
 - Buyer personas / named stakeholder groups: Nictiz eIDAS programme leads; provider CIO/IAM lead; portal product owner; privacy/security officer; vendor manager
 - Stakeholder interests: Nictiz: standardisation/readiness; providers: compliant access; vendors: product changes; patients: simpler digital identity
 - Public named stakeholders to route/verify: Leonique Niessen (Nictiz directeur-bestuurder), Walter Kraan (manager Productontwikkeling & Beheer), Tim Postema (manager Strategie & Advies), Wouter de Haan (bestuursadviseur), Jan van den Berg (voorzitter Raad van Toezicht), Jurgen Sernee (RvT, Noordwest Ziekenhuisgroep). Source: Nictiz bestuur page.

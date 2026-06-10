@@ -71,3 +71,14 @@ Append-only compact record of recurring-agent runs.
 - Sources checked: 5 public Zorg bij jou URLs were touched; 3 were decision-useful official sources.
 - Publish gate: met, because official source confirms 2026 pathway expansion/timing and materially sharpens the meeting question toward pathway-onboarding, lab-value exception handling and result-evidence workflows.
 - Demolish check: Zorg bij jou may already own the platform, medical service centre and care-path design capacity; disconfirm Truviq fit if lab-value integration, alarms, supervision handoff and tranche/evaluation reporting are already fully covered by incumbent app/MSC/Santeon tooling and contracts.
+
+## 2026-06-10 | H-005 EDI-wallet/EHDS timing and workflow-readiness test
+- Fallback note: started with H-002 targeted regional-GP digital-triage searches, but no decision-useful official source appeared within the fallback window; exact no-result queries were logged.
+- Research question: do current official Nictiz sources name implementation timing or workflow-readiness obligations that make H-005 more actionable than generic standards monitoring?
+- Confirming evidence: official Nictiz source clarifies EDI-wallet acceptance deadlines: foreign EU EDI-wallets for public healthcare parties from 24 Dec 2026, private care providers and insurers from 24 Dec 2027 when online identification/authentication is needed, and Dutch EDI-wallets expected for the whole care sector from 1 Jan 2028. Nictiz also says preparation affects security, privacy, management processes, user communication, servicedesk processes and ICT-supplier agreements.
+- Additional evidence: Nictiz says Xt-EHR outputs now provide EHDS implementation guidelines for patient summaries, medication data, medical imaging, research/lab results and discharge reports; TEHDAS2 Wave 3 consultation runs 5 May-28 Jun 2026 for secondary-use governance topics.
+- Weakening evidence: no named provider/insurer/GGD/care-office buyer, procurement route or implementation pilot was found in this cycle; route remains ecosystem validation, not direct buyer.
+- Sources checked: 3 official Nictiz public sources for H-005, plus H-002 negative site queries logged.
+- Publish gate: met, because official sources correct/sharpen timing and materially change the next action.
+- Dashboard updated: yes, one dashboard update.
+- Demolish check: identity/IAM, EHR/EPD/ECD and portal vendors may absorb the work; disconfirm Truviq fit if acceptance/readiness is handled entirely through existing vendor roadmaps with no cross-department workflow owner, exception queue, audit/remediation process or external implementation budget.
