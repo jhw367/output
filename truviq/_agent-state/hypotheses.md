@@ -11,12 +11,13 @@ Status values: active / strengthened / weakened / rejected / promoted-to-action.
 - Next best test: verify the commercial route: identify whether Santeon/Zorg bij jou has an external procurement/integration route for pathway-onboarding, lab-value exception handling, MSC supervision handoffs or result-evidence reporting, or whether all work is locked inside incumbent app/MSC contracts.
 
 ## H-002 — Zilveren Kruis digital-triage GP route as payer-driven workflow-control opportunity
-- Status: strengthened
-- Account type: direct buyer / payer-driven implementation route
+- Status: strengthened, but buyer difficulty flagged
+- Account type: ecosystem/payer route first; direct buyer only after partner/procurement evidence
 - Current evidence: public outputs cite Zilveren Kruis 2026–2027 digital-triage performance, VECOZO application route, 1 Jan/1 Jul start dates, four-week application deadline, 10% care-question usage target and Digizo.nu tool gate. 2026-06-12 update: Zilveren Kruis version 1.2 (2 Apr 2026) explicitly says region organisations prepared under O&I policy 2024-2025 and can support practices in choosing and implementing a tool; practices must keep usage data, with telephone-contact reduction as an example, and Zilveren Kruis may sample-check websites and request practice data. Digizo.nu lists positively tested tools and confirms one region-specific application, “Medicoo, Dokterswacht app en HCWB Huisartsenzorg”, with human-in-the-loop triage, HIS/HAPIS integration options, multilingual live chat/translation, NEN 7510/ISO 27001 and 1-2 week implementation support.
-- Confirm if: insurer, region organisation or provider source names a region/practice-group rollout, adoption/measurement burden, telephone-contact reduction reporting, or cross-tool exception routing.
-- Weaken/reject if: implementation and reporting are fully handled by approved triage tools plus HIS/portal/regional support without separate workflow-owner pain.
-- Next best test: verify whether HCWB Huisartsenzorg or Medicinfo publishes the regional owner/workflow route for measuring telephone-contact reduction, practice data requests and HIS/HAPIS integration exceptions; if not public, use this as the partner question rather than broad searching.
+- User steering 2026-06-12: Zilveren Kruis is part of Achmea and should be treated as a difficult/slow direct customer. Do not over-prioritize Achmea/Zilveren Kruis as a first direct buyer; use it primarily as a payer-policy signal, ecosystem validation route, or partner-led route unless a concrete owner/procurement path appears.
+- Confirm if: insurer, region organisation or provider source names a region/practice-group rollout, adoption/measurement burden, telephone-contact reduction reporting, cross-tool exception routing, and a concrete non-Achmea implementation owner or partner route.
+- Weaken/reject if: implementation and reporting are fully handled by approved triage tools plus HIS/portal/regional support without separate workflow-owner pain, or if Achmea/Zilveren Kruis route stays too centralised/slow for Truviq’s first-deal motion.
+- Next best test: verify whether HCWB Huisartsenzorg, Medicinfo, or a regional organisation publishes the owner/workflow route for measuring telephone-contact reduction, practice data requests and HIS/HAPIS integration exceptions; if not public, use this as the partner question rather than broad searching.
 
 ## H-003 — AZWA basisfunctionaliteiten create regional chain-workflow opportunities
 - Status: strengthened
