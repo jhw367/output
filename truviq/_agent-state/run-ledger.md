@@ -90,3 +90,12 @@ Append-only compact record of recurring-agent runs.
 - Scope guard: Addie inherits the existing one-hypothesis/source-budget/publish-gate rules and starts with a focused NL pilot cycle before broader EU expansion.
 - Public outputs changed: none.
 - Publish gate: not met.
+
+## 2026-06-12 | Addie full-funnel orchestrator expansion
+- Trigger: J H provided the expanded Addie definition as an autonomous health agentic orchestrator for the EU Healthcare Automation Pursuit Program.
+- Action: expanded `addie-proposition-system.md` from proposition optimization into full-funnel orchestration: Market Definition → Proposition Evolution → Synchronized Marketing → Lead Capture → Qualification/Nurturing → Opportunity Conversion → Safe, Profitable Deals → Post-deal learning.
+- Agent roles added/expanded: Marketing & Content Engine, Lead Gen & Nurturing, Sales Funnel, Compliance Guardian for funnel execution, Partner/Localization, Evaluator/Optimizer and Memory Manager.
+- Safety gate: Addie may draft campaigns, outreach, CRM flows, pilot proposals and deal materials, but live sending, ads, CRM writes, public claims, pricing, contracts and personal-data processing require explicit human approval and compliance basis.
+- Cron updated: recurring job `ad941c94e9ed` now instructs each material run to select one Addie proposition/funnel element and include the funnel stage in output.
+- Public outputs changed: none.
+- Publish gate: not met.
