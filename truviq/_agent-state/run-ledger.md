@@ -82,3 +82,11 @@ Append-only compact record of recurring-agent runs.
 - Publish gate: met, because official sources correct/sharpen timing and materially change the next action.
 - Dashboard updated: yes, one dashboard update.
 - Demolish check: identity/IAM, EHR/EPD/ECD and portal vendors may absorb the work; disconfirm Truviq fit if acceptance/readiness is handled entirely through existing vendor roadmaps with no cross-department workflow owner, exception queue, audit/remediation process or external implementation budget.
+
+## 2026-06-12 | Addie process integration
+- Trigger: J H requested adding Addie (Adaptive Dynamic Development & Intelligence Engine) to the Truviq health research agents.
+- Action: created `addie-proposition-system.md` as the proposition-optimization process layer and updated the recurring `ad941c94e9ed` cron prompt to read it every run.
+- Process added: Observe → Simulate → Synthesize → Evaluate → Improve → Deploy/Test, with lightweight SSR, compliance guardian, proposition architect, evaluator, optimizer, partner/localization and memory-manager roles.
+- Scope guard: Addie inherits the existing one-hypothesis/source-budget/publish-gate rules and starts with a focused NL pilot cycle before broader EU expansion.
+- Public outputs changed: none.
+- Publish gate: not met.

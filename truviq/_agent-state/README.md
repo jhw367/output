@@ -9,6 +9,7 @@ Operating rules:
 - Update ledgers after every source or negative query.
 - Publish public outputs only when `publish-gate.md` criteria are met.
 - Keep outputs meeting-first: qualify 20-minute workflow-fit meetings, not generic orchestration pitches.
+- Treat `addie-proposition-system.md` as the proposition-optimization layer: each material run should connect the selected hypothesis to one narrow Addie micro-cycle (Observe → Simulate → Synthesize → Evaluate → Improve → Deploy/Test) without broadening source scope.
 
 Public outputs reconstructed from local files on 2026-06-05:
 - `../health-market-analysis.html`
@@ -17,3 +18,6 @@ Public outputs reconstructed from local files on 2026-06-05:
 - `../hlth-europe-2026-first-deal-sprint-plan.html`
 - `../truviq-health-match-readout.md`
 - `../truviq-health-match-readout.html`
+
+Process layers:
+- `addie-proposition-system.md` — Addie / Adaptive Dynamic Development & Intelligence Engine for autonomous proposition definition and optimization.
