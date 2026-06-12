@@ -43,3 +43,8 @@ Only real deltas go here. Cosmetic edits do not count.
 - Official Nictiz source corrects/sharpens the EDI-wallet acceptance timeline: public healthcare parties from 24 Dec 2026 for foreign EU EDI-wallets, private care providers/insurers from 24 Dec 2027 where online identification/authentication is needed, and Dutch EDI-wallet acceptance expected for the whole care sector from 1 Jan 2028.
 - Evidence delta: implementation is not only an identity-screen change; Nictiz explicitly names security, privacy, management processes, user communication, servicedesk processes and ICT-supplier agreements as affected workstreams.
 - Decision delta: H-005 strengthens as an ecosystem validation route, but still not a direct buyer; next meeting/research question should find one named provider/insurer/GGD/care-office readiness owner or procurement route before pitching.
+
+## 2026-06-12 H-002 digital-triage qualification update
+- H-002 strengthens from generic Zilveren Kruis policy signal to a narrower workflow-qualification route: region organisations support tool choice/implementation, practices must track tool usage, Zilveren Kruis may request practice data, and telephone-contact reduction is the named measurement example.
+- Evidence delta: Digizo.nu confirms a region-specific HCWB Huisartsenzorg / Medicinfo application with human-in-the-loop triage, HIS/HAPIS integration options, multilingual live chat/translation, NEN 7510/ISO 27001 and 1-2 week implementation support.
+- Decision delta: do not pitch Truviq as a triage-tool replacement; test whether regional organisations/practices need help with adoption measurement, data evidence, exception routing and integration work-arounds across approved tools.

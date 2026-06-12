@@ -99,3 +99,12 @@ Append-only compact record of recurring-agent runs.
 - Cron updated: recurring job `ad941c94e9ed` now instructs each material run to select one Addie proposition/funnel element and include the funnel stage in output.
 - Public outputs changed: none.
 - Publish gate: not met.
+
+## 2026-06-12 | H-002 Zilveren Kruis/Digizo digital-triage workflow-control test
+- Research question: does the Zilveren Kruis digital-triage policy plus Digizo tool evidence confirm an actionable regional workflow-control or lead-qualification route beyond generic tool adoption?
+- Confirming evidence: Zilveren Kruis version 1.2 says region organisations support practices in choosing and implementing digital triage, practices must keep usage data, telephone-contact reduction is the named measurement example, and Zilveren Kruis can request practice data. Digizo.nu confirms positively tested tools and a region-specific HCWB Huisartsenzorg / Medicinfo application with human-in-the-loop triage, HIS/HAPIS integration options, multilingual live chat/translation, NEN 7510/ISO 27001, personal/health-data processing and 1-2 week implementation support.
+- Weakening evidence: no direct procurement route, budget owner, named regional programme owner or public unmet need was found; approved vendors and regional organisations may already cover implementation and reporting.
+- Sources checked: 3 public sources plus 4 narrow no-result site queries.
+- Addie cycle: Lead Qualification/Nurturing + Proposition Evolution. SSR-lite personas sampled: GP practice manager, regional GP organisation implementation lead, insurer contract manager. Synthetic scores: purchase intent 5/10, trust/privacy 7/10, expected time savings 6/10, compliance confidence 7/10, integration ease 5/10, likelihood to pilot 5/10, budget credibility 4/10, partner trust 6/10. Best proposition variant is “adoption-evidence and exception-workflow support around approved tools”, not “new triage automation”.
+- Publish gate: not met; state files only.
+- Demolish check: H-002 may be too vendor-contained; disconfirm Truviq fit if HCWB/Medicinfo/regional organisations already provide dashboards, data extracts, HIS/HAPIS integration support and telephone-contact reduction reporting without gaps or external budget.
